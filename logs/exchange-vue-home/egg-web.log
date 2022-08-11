@@ -1,0 +1,26 @@
+2022-04-15 19:19:27,678 INFO 6948 [egg:logger] init all loggers with options: {"dir":"D:\\Develop\\Vue\\KnoxEx\\Home\\logs\\exchange-vue-home","encoding":"utf8","env":"unittest","level":"INFO","consoleLevel":"WARN","disableConsoleAfterReady":false,"outputJSON":false,"buffer":false,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-04-15 19:19:27,710 INFO 6948 [egg-multipart] stream mode enable
+2022-04-15 19:19:28,731 INFO 6948 [egg-static] starting static serve / -> D:\Develop\Vue\KnoxEx\Home\app\dist
+2022-04-15 19:19:28,748 INFO 6948 [egg-security] use methodnoallow middleware
+2022-04-15 19:19:28,752 INFO 6948 [egg-security] use noopen middleware
+2022-04-15 19:19:28,762 INFO 6948 [egg-security] use nosniff middleware
+2022-04-15 19:19:28,766 INFO 6948 [egg-security] use xssProtection middleware
+2022-04-15 19:19:28,769 INFO 6948 [egg-security] use xframe middleware
+2022-04-15 19:19:28,800 INFO 6948 [egg-security] use dta middleware
+2022-04-15 19:19:28,800 INFO 6948 [egg-security] compose 6 middlewares into one security middleware
+2022-04-15 19:19:31,599 INFO 6948 [egg:core] dump config after load, 6ms
+2022-04-15 19:19:31,636 INFO 6948 [egg-watcher:application] watcher start success
+2022-04-15 19:19:31,646 INFO 6948 [egg:core] dump config after ready, 9ms
+2022-04-15 19:20:34,379 INFO 16236 [egg:logger] init all loggers with options: {"dir":"D:\\Develop\\Vue\\KnoxEx\\Home\\logs\\exchange-vue-home","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-04-15 19:20:34,410 INFO 16236 [egg-multipart] stream mode enable
+2022-04-15 19:20:34,573 INFO 16236 [egg-static] starting static serve / -> D:\Develop\Vue\KnoxEx\Home\app\dist
+2022-04-15 19:20:34,576 INFO 16236 [egg-security] use methodnoallow middleware
+2022-04-15 19:20:34,576 INFO 16236 [egg-security] use noopen middleware
+2022-04-15 19:20:34,577 INFO 16236 [egg-security] use nosniff middleware
+2022-04-15 19:20:34,578 INFO 16236 [egg-security] use xssProtection middleware
+2022-04-15 19:20:34,579 INFO 16236 [egg-security] use xframe middleware
+2022-04-15 19:20:34,580 INFO 16236 [egg-security] use dta middleware
+2022-04-15 19:20:34,580 INFO 16236 [egg-security] compose 6 middlewares into one security middleware
+2022-04-15 19:20:34,591 INFO 16236 [egg:core] dump config after load, 5ms
+2022-04-15 19:20:34,605 INFO 16236 [egg-watcher:application] watcher start success
+2022-04-15 19:20:34,613 INFO 16236 [egg:core] dump config after ready, 7ms

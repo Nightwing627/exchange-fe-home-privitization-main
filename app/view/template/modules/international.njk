@@ -1,0 +1,16 @@
+<section class="internationalHome international-home-container c-2-bg">
+    {% import "./swiper/international.njk" as swiper %}
+    {{ swiper.boxStyle(
+    slideList=helper.swiper.getInterMap(cmsAdvertList),
+    extendPath =sourceMap.interSwiperExtend,
+    title=internationalTitle.title,
+    subTitle=internationalTitle.subTitle
+    )}}
+    {% include "./noticeInfo/international.njk" %}
+    {% if headerSymbol.length %}
+        {% include "./recommend/international.njk" %}
+    {% endif %}
+    {% include "./market/international.njk" %}
+    {% include "./custom/international.njk" %}
+    <script></script>
+</section>

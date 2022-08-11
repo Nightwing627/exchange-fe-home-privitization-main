@@ -1,0 +1,97 @@
+{
+  "name": "exchange-vue-home",
+  "version": "2.0.0",
+  "description": "knoxexchange",
+  "private": false,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "@babel/core": "7.17.5",
+    "@babel/helper-module-imports": "7.16.7",
+    "@babel/preset-env": "7.16.11",
+    "@babel/preset-stage-0": "7.8.3",
+    "@knoxexchange/blockchain-ui-privatization": "1.8.0",
+    "@vue/babel-preset-app": "4.5.15",
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.0",
+    "egg": "2.34.0",
+    "egg-scripts": "^2.11.0",
+    "egg-view-nunjucks": "^2.2.0",
+    "graphql-request": "^1.8.2",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-copy": "^4.0.1",
+    "gulp-rev": "^9.0.0",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "html-minifier": "^4.0.0",
+    "koa-compress": "^3.0.0",
+    "koa-conditional-get": "^2.0.0",
+    "koa-etag": "^3.0.0",
+    "through2": "^3.0.1",
+    "tinify": "^1.6.0-beta.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.8.3",
+    "autod": "^3.0.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "cross-env": "^7.0.2",
+    "egg-bin": "^4.3.7",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^4.2.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-eggache": "^1.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsdoc": "^20.0.5",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "lint-staged": "^7.2.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "build": "node ./build.js",
+    "autod": "autod",
+    "lint": "eslint .",
+    "dev": "egg-bin dev --port=7007",
+    "dev80": "egg-bin dev --port=80",
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "gulpDev": "cross-env NODE_ENV=development gulp dev",
+    "startTestHome": "egg-scripts start --daemon --testEnv=true --port=7007 --title=exchange-vue-server-Home --env=prod",
+    "stopTestHome": "egg-scripts stop --title=exchange-vue-server-Home",
+    "start-exchange-vue-server-home": "egg-scripts start --daemon --title=exchange-vue-server-home --port=8188 --env=prod",
+    "stop-exchange-vue-server-home": "egg-scripts stop --title=exchange-vue-server-home"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "eslintIgnore": [
+    "coverage",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "author": "Samuel Safahi",
+  "license": "BSL"
+}

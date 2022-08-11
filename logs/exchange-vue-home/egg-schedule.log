@@ -1,0 +1,20 @@
+2022-04-15 19:19:27,708 INFO 6948 [egg-schedule]: register schedule D:\Develop\Vue\KnoxEx\Home\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-15 19:19:27,709 INFO 6948 [egg-schedule]: register schedule D:\Develop\Vue\KnoxEx\Home\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-04-15 19:19:27,709 INFO 6948 [egg-schedule]: register schedule D:\Develop\Vue\KnoxEx\Home\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-15 19:19:27,709 INFO 6948 [egg-schedule]: register schedule D:\Develop\Vue\KnoxEx\Home\app\schedule\remove-log.js
+2022-04-15 19:19:31,651 INFO 6948 [Timer] D:\Develop\Vue\KnoxEx\Home\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 33028353ms at 2022-04-16 04:30:00.004
+2022-04-15 19:19:31,652 INFO 6948 [Timer] D:\Develop\Vue\KnoxEx\Home\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 16828348ms at 2022-04-16 00:00:00.000
+2022-04-15 19:19:31,653 INFO 6948 [Timer] D:\Develop\Vue\KnoxEx\Home\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 16829348ms at 2022-04-16 00:00:01.001
+2022-04-15 19:19:31,653 INFO 6948 [Timer] D:\Develop\Vue\KnoxEx\Home\app\schedule\remove-log.js next time will execute immediate
+2022-04-15 19:19:31,692 INFO 6948 [Timer] D:\Develop\Vue\KnoxEx\Home\app\schedule\remove-log.js next time will execute after 86400000ms at 2022-04-16 19:19:31.692
+2022-04-15 19:20:34,621 INFO 2940 [Timer] D:\Develop\Vue\KnoxEx\Home\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 32965381ms at 2022-04-16 04:30:00.002
+2022-04-15 19:20:34,621 INFO 2940 [Timer] D:\Develop\Vue\KnoxEx\Home\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 16765379ms at 2022-04-16 00:00:00.000
+2022-04-15 19:20:34,622 INFO 2940 [Timer] D:\Develop\Vue\KnoxEx\Home\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 16766379ms at 2022-04-16 00:00:01.001
+2022-04-15 19:20:34,622 INFO 2940 [Timer] D:\Develop\Vue\KnoxEx\Home\app\schedule\remove-log.js next time will execute immediate
+2022-04-15 19:20:34,622 INFO 2940 [Timer] D:\Develop\Vue\KnoxEx\Home\app\schedule\remove-log.js next time will execute after 86400000ms at 2022-04-16 19:20:34.622
+2022-04-15 19:20:34,409 INFO 16236 [egg-schedule]: register schedule D:\Develop\Vue\KnoxEx\Home\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-15 19:20:34,409 INFO 16236 [egg-schedule]: register schedule D:\Develop\Vue\KnoxEx\Home\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-04-15 19:20:34,409 INFO 16236 [egg-schedule]: register schedule D:\Develop\Vue\KnoxEx\Home\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-15 19:20:34,409 INFO 16236 [egg-schedule]: register schedule D:\Develop\Vue\KnoxEx\Home\app\schedule\remove-log.js
+2022-04-15 19:20:34,622 INFO 16236 [Job#16500648346221936704347132001] D:\Develop\Vue\KnoxEx\Home\app\schedule\remove-log.js executing by app
+2022-04-15 19:20:34,623 INFO 16236 [Job#16500648346221936704347132001] D:\Develop\Vue\KnoxEx\Home\app\schedule\remove-log.js execute succeed, used 0ms. 

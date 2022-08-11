@@ -1,0 +1,213 @@
+<div id="footer-box" class="footer-box y-4-bd no-margin">
+    <style>
+        .footer-box {
+            min-height: 264px;
+            background-color: #F7F7F7;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .no-margin {
+            margin-top: 0;
+        }
+        .footer-bar {
+            padding-top: 100px;
+        }
+        .footer-default {
+            padding-top: 80px;
+        }
+        .footer-logo {
+            width: 260px;
+            padding-left: 40px;
+        }
+        .footer-logo img {
+            max-height: 70px;
+        }
+        .logo {
+            max-height: 120px;
+            max-width: 120px;
+        }
+        .footer-menu {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-menu .logout {
+            display: flex;
+            align-items: center;
+            height: 30px;
+            width: 130px;
+            margin-right: 50px;
+            cursor: pointer;
+        }
+        .footer-menu .logout img {
+            width: 30px;
+            margin-right: 20px;
+        }
+        .footer-menu .logout span {
+            font-size: 14px;
+            font-weight: 500;
+            color: #16161F;
+        }
+        .footer-template {
+            width: 900px;
+            overflow: hidden;
+        }
+        .menu-ul-default {
+            width: 100%;
+        }
+        .menu-ul-default li {
+            float: left;
+            width: 260px;
+            padding-left: 40px;
+            line-height: 26px;
+        }
+        .menu-ul-default li a {
+            font-size: 14px;
+            color: #16161F;
+        }
+        .menu-ul-default li .hoverShow {
+            display: none;
+        }
+        .menu-ul-default li:hover .hoverShow {
+            display: inline-block;
+        }
+        .menu-ul-default li:hover .hoverHide {
+            display: none;
+        }
+        .menu-ul-default .tit {
+            margin-bottom: 15px;
+        }
+        .footer-box .copy {
+            text-align: center;
+            font-size: 14px;
+            color: #16161F;
+            line-height: 22px;
+        }
+        /*国际版*/
+        .int-footer-bar {
+            padding: 96px 110px 0 110px;
+        }
+        .int-footer-left {
+            float: left;
+        }
+        .int-footer-left p {
+            line-height: 26px;
+        }
+        .int-footer-logo {
+            width: 260px;
+            margin-bottom: 40px;
+        }
+        .int-footer-template {
+            float: right;
+        }
+        .menu-ul-int {
+            width: 600px;
+        }
+        .menu-ul-int li {
+            float: left;
+            width: 150px;
+            padding-left: 40px;
+            line-height: 26px;
+        }
+        .menu-ul-int li .hoverShow {
+            display: none;
+        }
+        .menu-ul-int li:hover .hoverShow {
+            display: inline-block;
+        }
+        .menu-ul-int li:hover .hoverHide {
+            display: none;
+        }
+        .menu-ul-int .tit {
+            margin-bottom: 15px;
+        }
+        .footer-box .int-copy {
+            text-align: left;
+            border-top-width: 1px;
+            border-top-style: solid;
+            font-size: 12px;
+            padding: 20px 110px 0 110px;
+        }
+    </style>
+    <section>
+        {% if footerTemplate and switch.config_footer_open === '1' %}
+            {% if footerTemplate.indexOf('foot-min-top') !== 1 %}
+                {{footerTemplate | safe}}
+            {% else %}
+                <div class="footer-bar" >
+                    <div class="footer-menu clearfix">
+                        <div class="footer-logo">
+                            <img src="{{helper.footer.logo(msg)}}" alt="">
+                        </div>
+                        <!-- 自定义 -->
+                        <div class="footer-template">
+                            {{footerTemplate | safe}}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% else %}
+        <div class="footer-bar footer-default">
+            
+            <div class="footer-menu">
+                <div class="logout" style="display: none;">
+                    <img src="{{sourceMap.logout}}" alt="" />
+                    <span>{{locale.home.logout}}</span>
+                </div>
+
+                <div class="footer-template">
+                    <ul class="menu-ul-default">
+                        {% for item in footerList %}
+                        <li class="item">
+                            <a class="hoverHide" href="/cms/{{item.fileName}}">{{item.title}}</a>
+                            <a class="hoverShow" href="/cms/{{item.fileName}}">{{item.title}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <!-- 底部区域 -->
+                <div class="copy">
+                    Copyright © 2019 {{companyName}}. <br>All rights reserved
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </section>
+    <script>
+        (function () {
+            try {
+                const { location, fetchData, emitter, isLogin } = window;
+                const $footerBox = document.querySelector('#footer-box');
+                const $logOut = $footerBox.querySelector('.logout');
+                let outFlag = true;
+
+                if (isLogin) {
+                    $logOut.style.display = 'block';
+                }
+
+                if ($logOut) {
+                    $logOut.addEventListener('click', () => {
+                    console.log('forter logout');
+                    if (!outFlag) { return; }
+                    outFlag = false;
+                    fetchData({
+                        url: '/fe-ex-api/user/login_out',
+                    }).then((data) => {
+                        outFlag = true;
+                        if (data.code.toString() === '0') {
+                        emitter.emit('tip', { text: data.msg, type: 'success' });
+                        location.reload();
+                        } else {
+                        emitter.emit('tip', { text: data.msg, type: 'error' });
+                        }
+                    });
+                    }, false);
+                }
+            } catch(err) {
+                console.log('err', err)
+            }
+            
+        })();
+    </script>
+</div>

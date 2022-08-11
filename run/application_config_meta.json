@@ -1,0 +1,366 @@
+{
+  "keys": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js",
+  "middleware": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js",
+  "compress": {
+    "threshold": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js",
+    "gzip": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js",
+    "maxAge": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js",
+    "usePrecompiledGzip": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js",
+    "dir": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js",
+    "dynamic": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-static\\config\\config.default.js"
+  },
+  "logger": {
+    "disableConsoleAfterReady": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js",
+    "dir": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "env": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "level": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "enablePerformanceTimer": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+  },
+  "view": {
+    "root": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js",
+    "mapping": {
+      ".njk": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js"
+    },
+    "cache": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-view\\config\\config.default.js",
+    "defaultViewEngine": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-view\\config\\config.default.js"
+  },
+  "security": {
+    "csrf": {
+      "enable": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js",
+      "type": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "supportedRequests": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "refererWhiteList": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "domainWhiteList": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+    "xframe": {
+      "enable": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "ipExceptionList": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js"
+    }
+  },
+  "devUrlProxy": {
+    "ex": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js",
+    "otc": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js",
+    "co": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\config.default.js"
+  },
+  "session": {
+    "maxAge": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-session\\config\\config.default.js",
+    "logValue": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-session\\config\\config.default.js"
+  },
+  "helper": {
+    "shtml": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-schedule\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart\\config\\config.default.js",
+    "autoFields": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart\\config\\config.default.js",
+    "allowArrayField": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart\\config\\config.default.js",
+      "disable": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart\\config\\config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideIgnore": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-logrotator\\config\\config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "throwOnUndefined": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "trimBlocks": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "lstripBlocks": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "cache": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-view-nunjucks\\config\\config.local.js"
+  },
+  "env": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "name": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "cookies": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "maxIpsCount": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "pkg": {
+    "name": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "version": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "description": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "private": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "egg": {
+      "declarations": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+    },
+    "dependencies": {
+      "@babel/core": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "@babel/helper-module-imports": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "@babel/preset-env": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "@babel/preset-stage-0": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "@knoxexchange/blockchain-ui-privatization": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "@vue/babel-preset-app": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "babel-plugin-transform-remove-strict-mode": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "babel-preset-es2015": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "babelify": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "browserify": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "egg": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "egg-scripts": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "egg-view-nunjucks": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "graphql-request": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "gulp": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "gulp-clean": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "gulp-clean-css": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "gulp-copy": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "gulp-rev": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "gulp-stylus": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "gulp-uglify": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "gulp-watch": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "html-minifier": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "koa-compress": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "koa-conditional-get": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "koa-etag": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "through2": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "tinify": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "vinyl-buffer": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "vinyl-source-stream": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+    },
+    "devDependencies": {
+      "@babel/plugin-transform-modules-commonjs": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "autod": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "babel-plugin-transform-es2015-modules-commonjs": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "babel-plugin-transform-es2015-modules-umd": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "cross-env": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "egg-bin": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "egg-ci": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "egg-mock": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "eslint": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "eslint-config-egg": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "eslint-import-resolver-alias": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "eslint-plugin-eggache": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "eslint-plugin-import": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "eslint-plugin-jsdoc": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "eslint-plugin-promise": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "eslint-plugin-vue": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "lint-staged": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+    },
+    "engines": {
+      "node": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+    },
+    "scripts": {
+      "build": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "autod": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "lint": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "dev": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "dev80": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "test": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "test-local": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "cov": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "ci": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "pkgfiles": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "gulpDev": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "startTestHome": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "stopTestHome": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "start-exchange-vue-server-home": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "stop-exchange-vue-server-home": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+    },
+    "ci": {
+      "version": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+    },
+    "eslintIgnore": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "repository": {
+      "type": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "url": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+    },
+    "files": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "author": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "license": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+  },
+  "baseDir": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "cacheControl": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "textLimit": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "strict": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "depth": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+    },
+    "onerror": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "request": {
+      "timeout": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "logging": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "port": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+  },
+  "onClientError": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\config.default.js"
+}

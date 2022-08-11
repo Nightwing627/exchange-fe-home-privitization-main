@@ -1,0 +1,565 @@
+{
+  "config": {
+    "session": {
+      "maxAge": 86400000,
+      "key": "EGG_SESS",
+      "httpOnly": true,
+      "encrypt": true,
+      "logValue": true
+    },
+    "security": {
+      "domainWhiteList": [],
+      "protocolWhiteList": [],
+      "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
+      "csrf": {
+        "enable": false,
+        "type": "ctoken",
+        "ignoreJSON": false,
+        "useSession": false,
+        "cookieName": "csrfToken",
+        "sessionName": "csrfToken",
+        "headerName": "x-csrf-token",
+        "bodyName": "_csrf",
+        "queryName": "_csrf",
+        "supportedRequests": [
+          {
+            "path": {},
+            "methods": [
+              "POST",
+              "PATCH",
+              "DELETE",
+              "PUT",
+              "CONNECT"
+            ]
+          }
+        ],
+        "refererWhiteList": []
+      },
+      "xframe": {
+        "enable": true,
+        "value": "SAMEORIGIN"
+      },
+      "hsts": {
+        "enable": false,
+        "maxAge": 31536000,
+        "includeSubdomains": false
+      },
+      "dta": {
+        "enable": true
+      },
+      "methodnoallow": {
+        "enable": true
+      },
+      "noopen": {
+        "enable": true
+      },
+      "nosniff": {
+        "enable": true
+      },
+      "referrerPolicy": {
+        "enable": false,
+        "value": "no-referrer-when-downgrade"
+      },
+      "xssProtection": {
+        "enable": true,
+        "value": "1; mode=block"
+      },
+      "csp": {
+        "enable": false,
+        "policy": {}
+      },
+      "ssrf": {
+        "ipBlackList": null,
+        "ipExceptionList": null,
+        "checkAddress": null
+      },
+      "_protocolWhiteListSet": "<Set>"
+    },
+    "helper": {
+      "shtml": {}
+    },
+    "jsonp": {
+      "limit": 50,
+      "callback": [
+        "_callback",
+        "callback"
+      ],
+      "csrf": false
+    },
+    "onerror": {
+      "errorPageUrl": "",
+      "appErrorFilter": null,
+      "templatePath": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
+    },
+    "i18n": {
+      "defaultLocale": "en_US",
+      "dirs": [],
+      "queryField": "locale",
+      "cookieField": "locale",
+      "cookieDomain": "",
+      "cookieMaxAge": "1y"
+    },
+    "watcher": {
+      "type": "development",
+      "eventSources": {
+        "default": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-watcher\\lib\\event-sources\\default",
+        "development": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+      }
+    },
+    "customLogger": {
+      "scheduleLogger": {
+        "consoleLevel": "NONE",
+        "file": "egg-schedule.log"
+      }
+    },
+    "schedule": {
+      "directory": []
+    },
+    "multipart": {
+      "mode": "stream",
+      "autoFields": false,
+      "defaultCharset": "utf8",
+      "fieldNameSize": 100,
+      "fieldSize": "100kb",
+      "fields": 10,
+      "fileSize": "10mb",
+      "files": 10,
+      "fileExtensions": [],
+      "whitelist": null,
+      "allowArrayField": false,
+      "tmpdir": "C:\\Users\\ALISA\\AppData\\Local\\Temp\\egg-multipart-tmp\\exchange-vue-home",
+      "cleanSchedule": {
+        "cron": "0 30 4 * * *",
+        "disable": false
+      }
+    },
+    "development": {
+      "watchDirs": [],
+      "ignoreDirs": [],
+      "fastReady": false,
+      "reloadOnDebug": true,
+      "overrideDefault": false,
+      "overrideIgnore": false
+    },
+    "logrotator": {
+      "filesRotateByHour": null,
+      "hourDelimiter": "-",
+      "filesRotateBySize": null,
+      "maxFileSize": 52428800,
+      "maxFiles": 10,
+      "rotateDuration": 60000,
+      "maxDays": 31
+    },
+    "static": {
+      "prefix": "/",
+      "dir": "D:\\Develop\\Vue\\KnoxEx\\Home\\app\\dist",
+      "dynamic": true,
+      "preload": false,
+      "buffer": false,
+      "maxFiles": 1000,
+      "gzip": true,
+      "maxAge": 31536000,
+      "usePrecompiledGzip": true
+    },
+    "view": {
+      "root": "D:\\Develop\\Vue\\KnoxEx\\Home\\app\\build\\template",
+      "cache": false,
+      "defaultExtension": ".html",
+      "defaultViewEngine": "",
+      "mapping": {
+        ".njk": "nunjucks"
+      }
+    },
+    "nunjucks": {
+      "autoescape": true,
+      "throwOnUndefined": false,
+      "trimBlocks": false,
+      "lstripBlocks": false,
+      "cache": false
+    },
+    "env": "local",
+    "name": "exchange-vue-home",
+    "keys": "<String len: 36>",
+    "cookies": {},
+    "proxy": false,
+    "maxIpsCount": 0,
+    "maxProxyCount": 0,
+    "protocolHeaders": "x-forwarded-proto",
+    "ipHeaders": "x-forwarded-for",
+    "hostHeaders": "",
+    "pkg": {
+      "name": "exchange-vue-home",
+      "version": "2.0.0",
+      "description": "knoxexchange",
+      "private": false,
+      "egg": {
+        "declarations": true
+      },
+      "dependencies": {
+        "@babel/core": "7.17.5",
+        "@babel/helper-module-imports": "7.16.7",
+        "@babel/preset-env": "7.16.11",
+        "@babel/preset-stage-0": "7.8.3",
+        "@knoxexchange/blockchain-ui-privatization": "1.8.0",
+        "@vue/babel-preset-app": "4.5.15",
+        "babel-plugin-transform-remove-strict-mode": "0.0.2",
+        "babel-preset-es2015": "^6.24.1",
+        "babelify": "^10.0.0",
+        "browserify": "^16.5.0",
+        "egg": "2.34.0",
+        "egg-scripts": "^2.11.0",
+        "egg-view-nunjucks": "^2.2.0",
+        "graphql-request": "^1.8.2",
+        "gulp": "^4.0.2",
+        "gulp-clean": "^0.4.0",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-copy": "^4.0.1",
+        "gulp-rev": "^9.0.0",
+        "gulp-stylus": "^2.7.0",
+        "gulp-uglify": "^3.0.2",
+        "gulp-watch": "^5.0.1",
+        "html-minifier": "^4.0.0",
+        "koa-compress": "^3.0.0",
+        "koa-conditional-get": "^2.0.0",
+        "koa-etag": "^3.0.0",
+        "through2": "^3.0.1",
+        "tinify": "^1.6.0-beta.2",
+        "vinyl-buffer": "^1.0.1",
+        "vinyl-source-stream": "^2.0.0"
+      },
+      "devDependencies": {
+        "@babel/plugin-transform-modules-commonjs": "^7.8.3",
+        "autod": "^3.0.1",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+        "cross-env": "^7.0.2",
+        "egg-bin": "^4.3.7",
+        "egg-ci": "^1.8.0",
+        "egg-mock": "^4.2.0",
+        "eslint": "^5.13.0",
+        "eslint-config-egg": "^7.1.0",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-plugin-eggache": "^1.0.0",
+        "eslint-plugin-import": "^2.19.1",
+        "eslint-plugin-jsdoc": "^20.0.5",
+        "eslint-plugin-promise": "^4.0.1",
+        "eslint-plugin-vue": "^5.0.0-0",
+        "lint-staged": "^7.2.2"
+      },
+      "engines": {
+        "node": ">=10.0.0"
+      },
+      "scripts": {
+        "build": "node ./build.js",
+        "autod": "autod",
+        "lint": "eslint .",
+        "dev": "egg-bin dev --port=7007",
+        "dev80": "egg-bin dev --port=80",
+        "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+        "test-local": "egg-bin test",
+        "cov": "egg-bin cov",
+        "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
+        "pkgfiles": "egg-bin pkgfiles",
+        "gulpDev": "cross-env NODE_ENV=development gulp dev",
+        "startTestHome": "egg-scripts start --daemon --testEnv=true --port=7007 --title=exchange-vue-server-Home --env=prod",
+        "stopTestHome": "egg-scripts stop --title=exchange-vue-server-Home",
+        "start-exchange-vue-server-home": "egg-scripts start --daemon --title=exchange-vue-server-home --port=8188 --env=prod",
+        "stop-exchange-vue-server-home": "egg-scripts stop --title=exchange-vue-server-home"
+      },
+      "ci": {
+        "version": "10"
+      },
+      "eslintIgnore": [
+        "coverage",
+        "dist"
+      ],
+      "repository": {
+        "type": "git",
+        "url": ""
+      },
+      "files": [
+        "lib",
+        "index.js"
+      ],
+      "author": "Samuel Safahi",
+      "license": "BSL"
+    },
+    "baseDir": "D:\\Develop\\Vue\\KnoxEx\\Home",
+    "HOME": "C:\\Users\\ALISA",
+    "rundir": "D:\\Develop\\Vue\\KnoxEx\\Home\\run",
+    "dump": {
+      "ignore": "<Set>"
+    },
+    "confusedConfigurations": {
+      "bodyparser": "bodyParser",
+      "notFound": "notfound",
+      "sitefile": "siteFile",
+      "middlewares": "middleware",
+      "httpClient": "httpclient"
+    },
+    "notfound": {
+      "pageUrl": ""
+    },
+    "siteFile": {
+      "/favicon.ico": "<Buffer len: 6463>",
+      "cacheControl": "public, max-age=2592000"
+    },
+    "bodyParser": {
+      "enable": true,
+      "encoding": "utf8",
+      "formLimit": "1mb",
+      "jsonLimit": "1mb",
+      "textLimit": "1mb",
+      "strict": true,
+      "queryString": {
+        "arrayLimit": 100,
+        "depth": 5,
+        "parameterLimit": 1000
+      },
+      "onerror": "<Function onerror>"
+    },
+    "logger": {
+      "dir": "D:\\Develop\\Vue\\KnoxEx\\Home\\logs\\exchange-vue-home",
+      "encoding": "utf8",
+      "env": "local",
+      "level": "INFO",
+      "consoleLevel": "INFO",
+      "disableConsoleAfterReady": false,
+      "outputJSON": false,
+      "buffer": true,
+      "appLogName": "exchange-vue-home-web.log",
+      "coreLogName": "egg-web.log",
+      "agentLogName": "egg-agent.log",
+      "errorLogName": "common-error.log",
+      "coreLogger": {
+        "consoleLevel": "WARN"
+      },
+      "allowDebugAtProd": false,
+      "enablePerformanceTimer": false,
+      "type": "agent"
+    },
+    "httpclient": {
+      "enableDNSCache": false,
+      "dnsCacheLookupInterval": 10000,
+      "dnsCacheMaxLength": 1000,
+      "request": {
+        "timeout": 5000
+      },
+      "httpAgent": {
+        "keepAlive": true,
+        "freeSocketTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      },
+      "httpsAgent": {
+        "keepAlive": true,
+        "freeSocketTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      }
+    },
+    "meta": {
+      "enable": true,
+      "logging": false
+    },
+    "coreMiddleware": [
+      "meta",
+      "siteFile",
+      "notfound",
+      "bodyParser",
+      "overrideMethod"
+    ],
+    "workerStartTimeout": 600000,
+    "serverTimeout": null,
+    "cluster": {
+      "listen": {
+        "path": "",
+        "port": 7001,
+        "hostname": ""
+      }
+    },
+    "clusterClient": {
+      "maxWaitTime": 60000,
+      "responseTimeout": 60000
+    },
+    "onClientError": null,
+    "middleware": [
+      "compress",
+      "conditional",
+      "etag"
+    ],
+    "compress": {
+      "threshold": 1024
+    },
+    "devUrlProxy": {
+      "ex": "https://tundraswap.com",
+      "otc": "https://tundraswap.com",
+      "co": "https://tundraswap.com"
+    },
+    "coreMiddlewares": "~config~coreMiddleware",
+    "appMiddlewares": "~config~middleware",
+    "appMiddleware": "~config~middleware"
+  },
+  "plugins": {
+    "onerror": {
+      "enable": true,
+      "package": "egg-onerror",
+      "name": "onerror",
+      "dependencies": [],
+      "optionalDependencies": [
+        "jsonp"
+      ],
+      "env": [],
+      "from": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-onerror",
+      "version": "2.1.0"
+    },
+    "session": {
+      "enable": true,
+      "package": "egg-session",
+      "name": "session",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-session",
+      "version": "3.3.0"
+    },
+    "i18n": {
+      "enable": true,
+      "package": "egg-i18n",
+      "name": "i18n",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-i18n",
+      "version": "2.1.1"
+    },
+    "watcher": {
+      "enable": true,
+      "package": "egg-watcher",
+      "name": "watcher",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-watcher",
+      "version": "3.1.1"
+    },
+    "multipart": {
+      "enable": true,
+      "package": "egg-multipart",
+      "name": "multipart",
+      "dependencies": [],
+      "optionalDependencies": [
+        "schedule"
+      ],
+      "env": [],
+      "from": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-multipart",
+      "version": "2.13.1"
+    },
+    "security": {
+      "enable": true,
+      "package": "egg-security",
+      "name": "security",
+      "dependencies": [],
+      "optionalDependencies": [
+        "session"
+      ],
+      "env": [],
+      "from": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-security",
+      "version": "2.10.1"
+    },
+    "development": {
+      "enable": true,
+      "package": "egg-development",
+      "name": "development",
+      "dependencies": [
+        "watcher"
+      ],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-development",
+      "version": "2.7.0"
+    },
+    "logrotator": {
+      "enable": true,
+      "package": "egg-logrotator",
+      "name": "logrotator",
+      "dependencies": [
+        "schedule"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-logrotator",
+      "version": "3.1.0"
+    },
+    "schedule": {
+      "enable": true,
+      "package": "egg-schedule",
+      "name": "schedule",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-schedule",
+      "version": "3.6.6"
+    },
+    "static": {
+      "enable": true,
+      "package": "egg-static",
+      "name": "static",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-static",
+      "version": "2.2.0"
+    },
+    "jsonp": {
+      "enable": true,
+      "package": "egg-jsonp",
+      "name": "jsonp",
+      "dependencies": [],
+      "optionalDependencies": [
+        "security"
+      ],
+      "env": [],
+      "from": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-jsonp",
+      "version": "2.0.0"
+    },
+    "view": {
+      "enable": true,
+      "package": "egg-view",
+      "name": "view",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-view",
+      "version": "2.1.3"
+    },
+    "nunjucks": {
+      "enable": true,
+      "package": "egg-view-nunjucks",
+      "name": "nunjucks",
+      "dependencies": [
+        "security",
+        "view"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "D:\\Develop\\Vue\\KnoxEx\\Home\\config\\plugin.js",
+      "path": "D:\\Develop\\Vue\\KnoxEx\\Home\\node_modules\\egg-view-nunjucks",
+      "version": "2.3.0"
+    }
+  }
+}

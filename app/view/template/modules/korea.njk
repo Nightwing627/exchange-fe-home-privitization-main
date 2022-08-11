@@ -1,0 +1,204 @@
+<div class="homes korea-home-container" style="background-color: #fff">
+    <style>
+        .korea-home-container .korea-header {
+            background-image: linear-gradient(-179deg, #0046bb 0%, #083687 100%);
+            background: #083687;
+            padding-top: 65px;
+            height: 530px;
+            color: #fff;
+            margin-top: -65px;
+        }
+        .korea-home-container .korea-header .title {
+            text-align: center;
+            font-size: 44px;
+            line-height: 50px;
+            width: 548px;
+            margin: 85px auto 0;
+        }
+        .korea-home-container .korea-header .subTitle {
+            text-align: center;
+            font-size: 16px;
+            width: 548px;
+            margin: 10px auto 0;
+        }
+        .korea-home-container .korea-header .count {
+            text-align: center;
+            width: 240px;
+            margin: 40px auto;
+            height: 70px;
+        }
+        .korea-home-container .korea-header .count p {
+            width: 120px;
+            float: left;
+        }
+        .korea-home-container .korea-header .count p span {
+            display: block;
+            color: #fff;
+            text-align: center;
+        }
+        .korea-home-container .korea-header .count p .num {
+            font-size: 40px;
+            height: 40px;
+            line-height: 40px;
+            margin-bottom: 14px;
+        }
+        .korea-home-container .korea-header .count p .name {
+            font-size: 16px;
+        }
+        .korea-home-container .korea-header .button-box {
+            text-align: center;
+        }
+        .korea-home-container .korea-header .button-box .common-button {
+            margin: 0 10px;
+        }
+        .korea-home-container .korea-header .button-box .loginBtn {
+            background: #00276a !important;
+        }
+        .korea-home-container .korea-header-bar {
+            width: 1180px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .korea-home-container .gg {
+            position: absolute;
+            background: rgba(255,255,255,0.2);
+            width: 300px;
+            top: 20px;
+            right: -80px;
+            top: 100px;
+            padding: 30px 24px;
+        }
+        .korea-home-container .gg .gg-h {
+            margin-bottom: 20px;
+        }
+        .korea-home-container .gg .gg-h .h4 {
+            font-size: 16px;
+            color: #faad14;
+        }
+        .korea-home-container .gg .gg-h .more {
+            float: right;
+        }
+        .korea-home-container .gg .button {
+            cursor: pointer;
+        }
+        .korea-home-container .gg .notice-item {
+            margin-top: 10px;
+        }
+        .korea-home-container .gg .notice-item .dian {
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            vertical-align: middle;
+            margin-right: 5px;
+            background: #edf4f8;
+        }
+        .korea-home-container .gg a {
+            color: #edf4f8;
+        }
+        .korea-home-container .makter-content {
+            width: 1160px;
+            margin: 0 auto;
+            height: 360px;
+            padding-top: 67px;
+        }
+        .korea-home-container .makter-content .Recommend-box {
+            float: left;
+            width: 840px;
+            height: 272px;
+        }
+        .korea-home-container .makter-content .Market-box {
+            width: 320px;
+            float: left;
+        }
+        .korea-home-container .solidBc{
+            display: none;
+        }
+        .korea-home-container .common-button:hover .u-14-bg{
+            display: block;
+        }
+
+        .korea-home-container .common-button:active .u-15-bg{
+            display: block;
+        }
+
+    </style>
+    <div class="korea-header" style="background: url({{sourceMap.ko1_bg}}) 0 0 no-repeat;">
+        <div class="korea-header-bar">
+            <h1 class="title">{{ internationalTitle.title | safe }}</h1>
+            <p class="subTitle">{{ internationalTitle.subTitle | safe }}</p>
+            <div class="count">
+                <p class="item">
+                    <span class="num">188</span>
+                    <span class="name">{{ locale.korea.types[0] }}</span>
+                </p>
+                <p class="item">
+                    <span class="num">236</span>
+                    <span class="name">{{ locale.korea.types[1] }}</span>
+                </p>
+            </div>
+            <div class="button-box">
+                <button class="common-button common-button-solid u-8-bg u-16-cl go-trade"
+                        style="width: 180px; height: 50px; padding-left: 24px; padding-right: 24px; margin-top: 0px;">
+                    <div class="common-button-slot">{{ locale.korea.goTrade }}</div><div class="u-14-bg solidBc"></div><div class="u-15-bg solidBc"></div></button>
+                <button class="common-button loginBtn common-button-solid u-8-bg u-16-cl login"
+                        style="width: 180px; height: 50px; padding-left: 24px; padding-right: 24px; margin-top: 0px;">
+                    <div class="common-button-slot">{{ locale.korea.login }}</div><div class="u-14-bg solidBc"></div><div class="u-15-bg solidBc"></div></button>
+            </div>
+            {% if noticeList.length %}
+            <div class="gg">
+                <div class="gg-h">
+                    <span class="h4">{{ locale.korea.noticeInfo }}</span>
+                    <a class="button more x-3-cl" href="/noticeInfo">
+                        <img src="{{sourceMap.ko_more}}" alt="" />
+                    </a>
+                </div>
+                {% for item in noticeList %}
+                <p class="notice-item">
+                    <a href="/noticeInfo/{{item.id}}">
+                        <i class="dian"></i>{{ item.noticeText }}
+                    </a>
+                </p>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="makter-content">
+        <div class="Recommend-box">
+            {% include "./recommend/korea.njk" %}
+        </div>
+        <!-- 24小时行情 -->
+        <div class="Market-box">
+            {% include "./market/korea.njk" %}
+        </div>
+    </div>
+    {% include "./custom/korea.njk" %}
+    <script>
+        (() => {
+            const { emitter } = window;
+            const $koreaHeader = document.querySelector('.korea-header');
+            const $goTrade = $koreaHeader.querySelector('.go-trade');
+            const $login = $koreaHeader.querySelector('.login');
+
+            const bindEvent = () => {
+                $goTrade.addEventListener('click', () => {
+                    location.href = '/trade';
+                }, false);
+                $login.addEventListener('click', () => {
+                    location.href = '/login';
+                }, false);
+            };
+
+            const init = () => {
+                emitter.on('login', () => {
+                    if (window.isLogin){
+                        $login.style.display = 'none';
+                    }
+                });
+                bindEvent();
+            };
+
+            init();
+        })();
+    </script>
+</div>

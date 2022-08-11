@@ -1,0 +1,125 @@
+<div class="home-custom-template">
+    <style></style>
+    {% if footer_warm_prompt %}
+    <section class="interHome-custom">{{ footer_warm_prompt | safe }}</section>
+    {% else %}
+    <div class="home-container">
+        <div class="home-header" style="background-color: #0E1A2E">
+            <h2 class="block-title f-8-cl">
+                <!-- 随时随地 多平台终端交易 -->
+                {{locale.homeTemplate.text_01}}
+            </h2>
+            <p class="mark f-2-cl">
+                <!-- 覆盖iOS、Android、Windows、Mac多个平台，支持全业务功能 -->
+                {{locale.homeTemplate.text_02}}
+            </p>
+            <div class="down-btn">
+                <a href="/appDownload" class="btn u-16-cl u-8-bd">
+                    <b class="hoverHide">{{locale.homeTemplate.text_03}}</b>
+                    <b class="hoverShow u-8-cl">{{locale.homeTemplate.text_03}}</b>
+                </a>
+            </div>
+        </div>
+        <div class="bg-img">
+            <div class="bg-img-bar">
+                <p class="home_edit_imga">
+                </p>
+                <p class="home_edit_imgb">
+                </p>
+            </div>
+        </div>
+        <h2 class="block-title f-1-cl">
+            <!-- 产品与服务 -->
+            {{locale.homeTemplate.text_04}}
+        </h2>
+        <p class="mark f-2-cl">
+            <!-- 为全球数百万用户提供安全、可信赖的数字资产交易及资产管理服务 -->
+            {{locale.homeTemplate.text_05}}
+        </p>
+        <div class="product">
+            <div class="pro-item c-4-bg">
+                <div class="pro-img pro-img-1"></div>
+                <h4 class="pro-tit f-1-cl">
+                    <!-- 全球化布局 -->
+                    {{locale.homeTemplate.text_06}}
+                </h4>
+                <p class="pro-text f-2-cl">
+                    <!-- 多个国家设立本土化交易服务中心打造多业务形态为一体 -->
+                    {{locale.homeTemplate.text_07}}
+                </p>
+            </div>
+            <div class="pro-item c-4-bg">
+                <div class="pro-img pro-img-2"></div>
+                <h4 class="pro-tit f-1-cl">
+                    <!-- 安全体系 -->
+                    {{locale.homeTemplate.text_08}}
+                </h4>
+                <p class="pro-text f-2-cl">
+                    <!-- 一流团队打造专业安全多重防御让您资产无忧 -->
+                    {{locale.homeTemplate.text_09}}
+                </p>
+            </div>
+            <div class="pro-item c-4-bg">
+                <div class="pro-img pro-img-3"></div>
+                <h4 class="pro-tit f-1-cl">
+                    <!-- 交易系统 -->
+                    {{locale.homeTemplate.text_10}}
+                </h4>
+                <p class="pro-text f-2-cl">
+                    <!-- 多个国家设立本土化交易服务中心打造多业务为一体 -->
+                    {{locale.homeTemplate.text_11}}
+                </p>
+            </div>
+            <div class="pro-item c-4-bg">
+                <div class="pro-img pro-img-4"></div>
+                <h4 class="pro-tit f-1-cl">
+                    <!-- 高扩展性 -->
+                    {{locale.homeTemplate.text_12}}
+                </h4>
+                <p class="pro-text f-2-cl">
+                    <!-- 资产流转快速交易畅通无阻 -->
+                    {{locale.homeTemplate.text_13}}
+                </p>
+            </div>
+        </div>
+        <div class="footer-bootom y-3-bg y-2-bd">
+            <h2 class="block-title z-1-cl">
+                <!-- 马上开启交易之旅 -->
+                {{locale.homeTemplate.text_14}}
+            </h2>
+            <p class="info z-2-cl">
+                <!-- 提供币币、法币、合约交易等全面数字资产业务 -->
+                {{locale.homeTemplate.text_15}}
+            </p>
+            <div class="button-box u-8-bg">
+                <i class="button-hover-bg u-14-bg"></i>
+                <a class="button u-16-cl" href="register">
+                    <!-- 立即注册 -->
+                    {{locale.homeTemplate.text_16}}
+                </a>
+            </div>
+        </div>
+        <script>
+            (function(){
+                const container = document.querySelector(".home-custom-template");
+                var proImg = container.querySelectorAll(".pro-img");
+                var homeEditImga = container.querySelector(".home_edit_imga");
+                var homeEditImgb = container.querySelector(".home_edit_imgb");
+                var bgImg = container.querySelector(".bg-img");
+                homeEditImga.style.background = "url(" + window.imgMap.home_edit_imga + ")";
+                homeEditImgb.style.background = "url(" + window.imgMap.home_edit_imgb + ")";
+                bgImg.style.background =
+                    "url(" + window.imgMap.home_edit_bg + ") 0 bottom repeat-x #0E1A2E";
+                for (var i = 0, len = proImg.length; i < len; i++) {
+                    var img = window.imgMap["home_edit_icon" + (i + 1)];
+                    proImg[i].style.background = "url(" + img + ")";
+                }
+                emitter.on('login', () => {
+                    container.querySelector('.footer-bootom').style.display = 'none';
+                });
+            })();
+        </script>
+    </div>
+    {% endif %}
+    <script></script>
+</div>

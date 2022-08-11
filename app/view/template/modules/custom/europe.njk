@@ -1,0 +1,261 @@
+<section class="europeHome-custom">
+    <style>
+        .europeHome-custom {
+            padding-bottom: 100px;
+            margin-top: -90px;
+        }
+        .europeHome-custom .custom-bg {
+            padding-top: 192px;
+            background: linear-gradient(#f4f7fb, #fff); /* 标准的语法 */
+        }
+        .europeHome-custom .custom-title {
+            text-align: center;
+            font-size: 36px;
+            color: #31363e;
+            font-weight: 900;
+        }
+        .europeHome-custom .custom-maker {
+            text-align: center;
+            font-size: 16px;
+            color: #828ea1;
+            margin-top: 23px;
+        }
+        .europeHome-custom .product-inof {
+            width: 1180px;
+            margin: 0 auto;
+            padding-bottom: 125px;
+        }
+        .europeHome-custom .product-inof .pro-img {
+            width: 750px;
+            float: left;
+            margin-left: -20px;
+            margin-top: 5px;
+            position: relative;
+        }
+        .europeHome-custom .product-inof .pro-img .dh {
+            position: absolute;
+            top: 0;
+        }
+        .europeHome-custom .product-inof .pro-text {
+            width: 400px;
+            float: right;
+            margin-top: 60px;
+        }
+        .europeHome-custom .product-inof .pro-text .info-item .info-icon {
+            float: left;
+            margin-right: 22px;
+        }
+        .europeHome-custom .product-inof .pro-text .info-item .info-text {
+            width: 340px;
+            float: left;
+            margin-bottom: 28px;
+        }
+        .europeHome-custom .product-inof .pro-text .info-item .info-text .tit {
+            font-size: 16px;
+            color: #5a6679;
+            font-weight: 900;
+        }
+        .europeHome-custom .product-inof .pro-text .info-item .info-text .txt {
+            font-size: 14px;
+            color: #828ea1;
+            margin-top: 10px;
+            line-height: 20px;
+        }
+        .europeHome-custom .product-inof .down-block .down-btn {
+            width: 160px;
+            height: 40px;
+            float: left;
+            cursor: pointer;
+            margin: 6px 8px 0 0;
+            position: relative;
+        }
+        .europeHome-custom .product-inof .down-block .down-btn img {
+            width: 100%;
+        }
+        .europeHome-custom .product-inof .down-block .down-btn.down-btn-2 {
+            margin-right: 0;
+        }
+        .europeHome-custom .product-inof .down-block .down-btn:hover .hover-bg {
+            background: rgba(255,255,255,0.15);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+        .europeHome-custom .product-inof .down-block .ewm {
+            float: left;
+            width: 64px;
+            height: 64px;
+            position: relative;
+            cursor: pointer;
+        }
+        .europeHome-custom .product-inof .down-block .ewm .bug-ewm {
+            position: absolute;
+            background: #fff;
+            border: 0 solid #ddd;
+            bottom: 70px;
+            right: 11px;
+            width: 120px;
+            height: 150px;
+            padding: 15px;
+            box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+            border-radius: 4px;
+            display: none;
+        }
+        .europeHome-custom .product-inof .down-block .ewm .bug-ewm p {
+            font-size: 12px;
+            color: #828ea1;
+            margin-top: 10px;
+        }
+        .europeHome-custom .product-inof .down-block .ewm .bug-ewm .ewm-img {
+            border: 1px solid #d5dee7;
+            border-radius: 4px;
+            padding: 1px;
+            display: block;
+        }
+        .europeHome-custom .product-inof .down-block .ewm .bug-ewm .ewm-img img {
+            width: 100%;
+            height: 100%;
+        }
+        .europeHome-custom .product-inof .down-block .ewm .hove-show {
+            display: none;
+        }
+        .europeHome-custom .product-inof .down-block .ewm:hover .bug-ewm {
+            display: block;
+        }
+        .europeHome-custom .product-inof .down-block .ewm:hover .hove-hide {
+            display: none;
+        }
+        .europeHome-custom .product-inof .down-block .ewm:hover .hove-show {
+            display: block;
+        }
+        .europeHome-custom .product-ser-box {
+            background: #fff;
+        }
+        .europeHome-custom .product-ser {
+            width: 1180px;
+            margin: 0 auto;
+            padding-top: 1px;
+        }
+        .europeHome-custom .product-ser .img {
+            width: 383px;
+            float: right;
+        }
+        .europeHome-custom .product-ser .text {
+            width: 700px;
+            float: left;
+            margin-top: 100px;
+        }
+        .europeHome-custom .product-ser .text .title {
+            font-size: 36px;
+            color: #31363e;
+        }
+        .europeHome-custom .product-ser .text .maker {
+            width: 450px;
+            margin-top: 23px;
+            font-size: 16px;
+            color: #828ea1;
+            line-height: 22px;
+        }
+        .europeHome-custom .product-ser .label-block {
+            margin-top: 30px;
+        }
+        .europeHome-custom .product-ser .label-block .label-item {
+            width: 278px;
+            height: 68px;
+            line-height: 69px;
+            text-align: center;
+            border: 1px solid #d5dee7;
+            border-radius: 4px;
+            float: left;
+            margin-right: 20px;
+        }
+        .europeHome-custom .product-ser .label-block .label-item img {
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+        .europeHome-custom .product-ser .label-block .label-item:hover {
+            box-shadow: 0 4px 12px 0 rgba(0,0,0,0.1);
+        }
+
+        .europeHome-custom .product-ser .label-block .label-item:last-child{
+            margin: 0;
+        }
+
+        .europeHome-custom .product-ser .label-block .last-item {
+            margin: 0;
+        }
+
+    </style>
+    {% if footer_warm_prompt %}
+    {{ footer_warm_prompt | safe }}
+    {% else %}
+    <div class="custom-bg">
+        <h2 class="custom-title">{{ locale.europe.product.title }}</h2>
+        <p class="custom-maker">{{ locale.europe.product.desc }}</p>
+        <div class="product-inof clearfix">
+            <div class="pro-img">
+                <img src="{{sourceMap.om_pro_img1}}" alt="">
+            </div>
+            <div class="pro-text">
+                {% for item in locale.europe.productDetail %}
+                <div class="info-item clearfix">
+                    <div class="info-icon">
+                        <img src="helper.custom.getIndexImg('om_app_', loop.index, sourceMap)" alt="">
+                    </div>
+                    <div class="info-text">
+                        <div class="tit">{{item.title}}</div>
+                        <p class="txt">
+                            {{item.desc}}
+                        </p>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="down-block">
+                    <div class="down-btn">
+                        <span class="hover-bg"></span>
+                        <img src="{{sourceMap.om_btn_1}}" alt="">
+                    </div>
+                    <div class="down-btn down-btn-2">
+                        <span class="hover-bg"></span>
+                        <img src="{{sourceMap.om_btn_2}}" alt="">
+                    </div>
+                    <div class="ewm">
+                        <span class="hove-hide"><img :src="imgList.omEwm" alt=""></span>
+                        <span class="hove-show"><img :src="imgList.omEwm2" alt=""></span>
+                        {% if appDownLoad %}
+                        <div class="bug-ewm">
+                            <span class="ewm-img"><img src="{{appDownLoad.app_page_url}}" alt=""></span>
+                            <p>Scanning Download</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-ser-box">
+        <div class="product-ser">
+            <div class="clearfix">
+                <div class="text">
+                    <h2 class="title">{{ locale.europe.serviceDetail.title }}</h2>
+                    <p class="maker">{{ locale.europe.serviceDetail.desc }}</p>
+                </div>
+                <div class="img">
+                    <img src="{{sourceMap.om_img}}" alt="">
+                </div>
+            </div>
+            <div class="label-block clearfix">
+                {% for item in locale.europe.serviceDetail.list%}
+                <div class="label-item" class="lastItem(serviceList, inx)">
+                    <img src="{{helper.custom.getIndexImg('om_bicon', loop.index, sourceMap)}}" >
+                    {{item}}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <script></script>
+    {% endif %}
+</section>

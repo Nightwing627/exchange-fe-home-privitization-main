@@ -1,0 +1,21 @@
+<div class="bulletinBoard">
+    {% if noticeList.length %}
+    <div class="bull-bar">
+        {% for item in noticeList %}
+        <p class="notice-item">
+            <a class="hoverHide" href="/noticeInfo/{{item.id}}">
+                {{ item.noticeText }}
+            </a>
+            <a class="hoverShow x-1-cl" href="/noticeInfo/{{item.id}}">
+                {{item.noticeText }}
+            </a>
+        </p>
+        /
+        {% endfor %}
+        <a class="moreButton b-2-cl" href="/noticeInfo">
+            More
+        </a>
+    </div>
+    {% endif %}
+    <script></script>
+</div>

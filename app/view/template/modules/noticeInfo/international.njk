@@ -1,0 +1,120 @@
+<div class="bulletinBoard h-2-bg h-3-bd">
+    <style>
+        .bulletinBoard {
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            position: relative;
+        }
+        .bulletinBoard .backgrounds {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .bulletinBoard .bull-bar .notice-item {
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            padding-left: 20px;
+            box-sizing: border-box;
+            line-height: 40px;
+            height: 40px;
+        }
+        .bulletinBoard .bull-bar .notice-item .hoverShow {
+            display: none;
+        }
+        .bulletinBoard .bull-bar .notice-item .hoverHide {
+            display: inline-block;
+        }
+        .bulletinBoard .bull-bar .notice-item i {
+            margin-left: 20px;
+            display: inline-block;
+        }
+        .bulletinBoard .bull-bar .notice-item:last-child i {
+            display: none;
+        }
+        .bulletinBoard .bull-bar .notice-item:hover .hoverShow {
+            display: inline-block;
+        }
+        .bulletinBoard .bull-bar .notice-item:hover .hoverHide {
+            display: none;
+        }
+        .bulletinBoard .bull-bar .notice-item .new {
+            font-size: 9px;
+            border-width: 1px;
+            border-style: solid;
+            height: 15px;
+            line-height: 15px;
+            width: 34px;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .bulletinBoard .bull-bar .moreButton {
+            display: inline-block;
+            height: 10px;
+            width: 17px;
+            vertical-align: middle;
+            position: relative;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .bulletinBoard .bull-bar .moreButton b {
+            top: 0;
+            left: 0;
+            position: absolute;
+            display: inline-block;
+            height: 10px;
+            width: 17px;
+        }
+        .bulletinBoard .bull-bar .moreButton .hover-show {
+            display: none;
+        }
+        .bulletinBoard .bull-bar .moreButton:hover .hover-hide {
+            display: none;
+        }
+        .bulletinBoard .bull-bar .moreButton:hover .hover-show {
+            display: block;
+        }
+        .bulletinBoard .more {
+            position: absolute;
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            text-align: right;
+            right: 20px;
+            top: 7px;
+        }
+
+    </style>
+    {% if noticeList.length %}
+        <div class="bull-bar">
+                <p class="notice-item">
+                    <span class="new u-8-bd u-8-cl">NEW</span>
+                    <a class="hoverHide x-2-cl" href="/noticeInfo/{{noticeList[0].id}}">
+                        {{noticeList[0].noticeText}}
+                    </a>
+                    <a class="hoverShow x-1-cl" href="'/noticeInfo/{{noticeList[0].id}}">
+                        {{noticeList[0].noticeText}}
+                    </a>
+                </p>
+            <a class="moreButton" href="/noticeInfo">
+            <b class="hover-hide" data-img="{{sourceMap.ggicon_h}}"></b>
+            <b class="hover-show" data-img="{{sourceMap.ggicon}}"></b>
+          </a>
+        </div>
+    {% endif %}
+    <script>
+        (() => {
+            const bulletinBoard = document.querySelector('.bulletinBoard');
+            bulletinBoard.querySelectorAll('b').forEach((target) => {
+                const img = target.dataset.img;
+                target.style.background = `url(${img})`;
+            });
+        })()
+    </script>
+</div>

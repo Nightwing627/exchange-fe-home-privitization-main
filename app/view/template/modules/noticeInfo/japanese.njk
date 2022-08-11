@@ -1,0 +1,18 @@
+<div class="bulletinBoard">
+    {% if noticeList.length %}
+    <div class="bull-bar">
+        <p class="notice-item">
+            <img class="new" src="http://chaindown-oss.oss-accelerate.aliyuncs.com/static/public-img/japan-new-icon.png"
+                 alt="">
+            <a class="hoverHide" href="/noticeInfo/{{noticeList[0].id}}">
+                {{ noticeList[0].noticeText }}
+            </a>
+        </p>
+        <a class="moreButton" href="/noticeInfo">
+            <img class="right-icon"
+                 src="http://chaindown-oss.oss-accelerate.aliyuncs.com/static/public-img/japan-right-icon.png" alt="">
+        </a>
+    </div>
+    {% endif %}
+    <script></script>
+</div>

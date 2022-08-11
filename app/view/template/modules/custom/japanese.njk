@@ -1,0 +1,90 @@
+<div class="home-custom-template">
+    {% if footer_warm_prompt %}
+    {{ footer_warm_prompt | safe }}
+    {% else %}
+    <div class="interHome-custom japanese">
+        <div class="navsBase">
+            <h1 class="title">
+                {{ locale.homeTemplate.text_04 }}
+            </h1>
+            <p class="mess">
+                {{ locale.homeTemplate.text_05 }}
+            </p>
+            <div class="product-region" style="background:url({{sourceMap.japa_product}}) 0 0 no-repeat;">
+                <ul class="product-list">
+                    <li>
+                        <h1>{{locale.homeTemplate.text_06}}</h1>
+                        <p>{{locale.homeTemplate.text_07}}</p>
+                    </li>
+                    <li>
+                        <h1>{{locale.homeTemplate.text_10}}</h1>
+                        <p>{{locale.homeTemplate.text_09}}</p>
+                    </li>
+                    <li>
+                        <h1>{{locale.homeTemplate.text_12}}</h1>
+                        <p>{{locale.homeTemplate.text_11}}</p>
+                    </li>
+                    <li>
+                        <h1>{{locale.homeTemplate.text_14}}</h1>
+                        <p>{{locale.homeTemplate.text_13}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="exchange-top" style="background:url({{sourceMap.japa_top_bg}}) 0 0 no-repeat;">
+            <h1>{{ locale.japanese.exchangeTop.title }}</h1>
+            <p>{{ locale.japanese.exchangeTop.desc }}</p>
+            <div class="exchange-img-region">
+                <div class="img-box">
+                    <img class="exchange-top-img" src="{{sourceMap.japa_top_coin}}">
+                    <p>{{ locale.japanese.exchangeTop.types[0] }}</p>
+                </div>
+                <div class="img-box">
+                    <img class="exchange-top-img" src="{{sourceMap.japa_top_market}}">
+                    <p>{{ locale.japanese.exchangeTop.types[1] }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="register-step">
+            <h1>{{ locale.japanese.registerStep.title }}</h1>
+            <p>{{ locale.japanese.registerStep.desc }}</p>
+            <ul class="step-list clearfix">
+                {% for item in locale.japanese.registerStep.stepList %}
+                <li>
+                    <img src="{{helper.custom.getIndexImg('japa_register_', loop.index, sourceMap) }}">
+                </li>
+                <li>
+                    <h3 class="clearfix">
+                        <span class="medium">{{loop.index}}</span>
+                    </h3>
+                    <h1>{{ item.title }}</h1>
+                    <p>{{ item.desc }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="account-step">
+            <h1>{{ locale.japanese.accountStep.title }}</h1>
+            <p>{{ locale.japanese.accountStep.desc }}</p>
+            <ul class="step-list clearfix">
+                {% for item in locale.japanese.accountStep.stepList %}
+                <li>
+                    <div class="title">
+                        <span>{{loop.index}}</span>
+                        {{item.title}}
+                    </div>
+                    <img src="{{helper.custom.getIndexImg('japa_acc_', loop.index, sourceMap) }}">
+                    <p> {{item.desc}}</p>
+                </li>
+                {% if helper.recommend.koreaSymbolShow(loop.index0)%}
+                <li>
+                    <img src="{{sourceMap.japa_arrow}}" class="arrow-img"/>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <script></script>
+    {% endif %}
+</div>

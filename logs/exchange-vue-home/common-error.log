@@ -1,0 +1,36 @@
+2022-04-15 19:19:31,792 ERROR 6948 [-/127.0.0.1/-/20ms GET /] [controller.homePage] {"domain":"0.0.1:63033","message":"未拿到publicInfo.lan对象, 语言强制转为en_US","key":"publicInfo.lan"}
+2022-04-15 19:19:31,895 ERROR 6948 [-/127.0.0.1/-/122ms GET /] nodejs.RequestError: connect ECONNREFUSED 127.0.0.1:80, POST http://127.0.0.1/fe-ex-api/common/public_info_v4 -1 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":1,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"127.0.0.1:80:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+errno: -4078
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 80
+name: "RequestError"
+data: undefined
+path: "/fe-ex-api/common/public_info_v4"
+status: -1
+headers: {}
+res: {"status":-1,"statusCode":-1,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":44,"keepAliveSocket":false,"requestUrls":["http://127.0.0.1/fe-ex-api/common/public_info_v4"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 6948
+hostname: DESKTOP-TH96K6N
+
+2022-04-15 19:26:33,649 ERROR 16236 [-/::1/-/24ms GET /] [controller.homePage] {"domain":"com","message":"未拿到publicInfo.lan对象, 语言强制转为en_US","key":"publicInfo.lan"}
+2022-04-15 19:26:49,409 ERROR 16236 [-/::1/-/15782ms GET /] nodejs.RequestError: connect ECONNREFUSED 137.184.11.205:443, POST https://tundraswap.com/fe-ex-api/common/public_info_v4 -1 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":1,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"tundraswap.com:443:::::::::::::::::::::":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+errno: -4078
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "137.184.11.205"
+port: 443
+name: "RequestError"
+data: undefined
+path: "/fe-ex-api/common/public_info_v4"
+status: -1
+headers: {}
+res: {"status":-1,"statusCode":-1,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":15734,"keepAliveSocket":false,"requestUrls":["https://tundraswap.com/fe-ex-api/common/public_info_v4"],"timing":null,"remoteAddress":"137.184.11.205","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 16236
+hostname: DESKTOP-TH96K6N
+

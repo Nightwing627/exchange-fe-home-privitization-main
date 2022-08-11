@@ -1,0 +1,87 @@
+<div class="bulletinBoard h-2-bg h-3-bd">
+    <style>
+        .internationalHome.momo-home-container .bulletinBoard {
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            width: 100%;
+            height: 40px;
+            text-align: center;
+        }
+        .internationalHome.momo-home-container .bulletinBoard .backgrounds {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .internationalHome.momo-home-container .bulletinBoard .bull-bar {
+            background: #0d0a10;
+        }
+        .internationalHome.momo-home-container .bulletinBoard .bull-bar .notice-item {
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            box-sizing: border-box;
+            line-height: 40px;
+            height: 40px;
+            padding-left: 20px;
+        }
+        .internationalHome.momo-home-container .bulletinBoard .bull-bar .notice-item .hoverShow {
+            display: none;
+        }
+        .internationalHome.momo-home-container .bulletinBoard .bull-bar .notice-item .hoverHide {
+            display: inline-block;
+            color: #999;
+        }
+        .internationalHome.momo-home-container .bulletinBoard .bull-bar .notice-item i {
+            margin-left: 20px;
+            display: inline-block;
+        }
+        .internationalHome.momo-home-container .bulletinBoard .bull-bar .notice-item:last-child i {
+            display: none;
+        }
+        .internationalHome.momo-home-container .bulletinBoard .bull-bar .notice-item:hover .hoverShow {
+            display: inline-block;
+            color: #999;
+        }
+        .internationalHome.momo-home-container .bulletinBoard .bull-bar .notice-item:hover .hoverHide {
+            display: none;
+        }
+        .internationalHome.momo-home-container .bulletinBoard .bull-bar .new {
+            font-size: 9px;
+            height: 15px;
+            line-height: 15px;
+            width: 34px;
+            display: inline-block;
+        }
+        .internationalHome.momo-home-container .bulletinBoard .more {
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            text-align: right;
+            margin-left: 20px;
+        }
+    </style>
+    {% if noticeList.length %}
+    <div class="bull-bar">
+        <span class="new u-8-bg u-16-cl">NEW</span>
+        {% for item in noticeList %}
+        <p class="notice-item">
+            <a class="hoverHide x-2-cl" href="/noticeInfo/{{ item.id }}">
+                {{item.noticeText}}
+            </a>
+            <a class="hoverShow x-1-cl" href="/noticeInfo/{{ item.id }}">
+                {{item.noticeText}}
+            </a>
+            <i class="x-2-cl">/</i>
+        </p>
+        {% endfor %}
+        <!-- 更多 -->
+        <a class="more x-3-cl" href="/noticeInfo">全部公告</a>
+    </div>
+    {% endif %}
+    <script>
+
+    </script>
+</div>

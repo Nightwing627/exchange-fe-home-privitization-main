@@ -1,0 +1,507 @@
+<div class="tableContent" id="table-content">
+    <style>
+        .home-table {
+            min-width: 1100px;
+            width: 100%;
+            font-size: 12px;
+        }
+
+        .home-table .home-loading {
+            height: 300px;
+            position: relative;
+        }
+
+        .home-table .home-loading .loading-page {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate3d(-50%, -50%, 0);
+        }
+
+        .home-table .home-nodata {
+            height: 300px;
+            position: relative;
+            padding: 80px 0 80px;
+            text-align: center;
+            font-size: 12px;
+            box-sizing: border-box;
+        }
+
+        .home-table .home-nodata p {
+            margin-top: 5px;
+        }
+
+        .home-table .home-nodata .icon {
+            font-size: 36px;
+        }
+
+        .home-table .home-thead {
+            user-select: none;
+            width: 100%;
+            font-size: 12px;
+            height: 30px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .home-table .home-thead .sortable {
+            cursor: pointer;
+        }
+
+        .home-table .home-thead li {
+            height: 30px;
+            line-height: 30px;
+            text-align: right;
+            float: left;
+        }
+
+        .home-table .home-thead li:nth-child(1) {
+            width: 18%;
+        }
+
+        .home-table .home-thead li:nth-child(2) {
+            width: 20%;
+        }
+
+        .home-table .home-thead li:nth-child(3) {
+            width: 20%;
+        }
+
+        .home-table .home-thead li:nth-child(4) {
+            width: 15%;
+        }
+
+        .home-table .home-thead li:nth-child(5) {
+            width: 15%;
+        }
+
+        .home-table .home-thead li:nth-child(6) {
+            width: 15%;
+        }
+
+        .home-table .home-thead li:nth-child(7) {
+            width: 15%;
+        }
+
+        .home-table .home-thead li:first-child {
+            text-align: center;
+        }
+
+        .home-table .home-tbody-box {
+            transition: all 0.5s;
+            overflow: hidden;
+        }
+
+        .home-table .home-tbody .home-tbody-title {
+            height: 55px;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            line-height: 55px;
+        }
+
+        .home-table .home-tbody .home-tbody-title .lable {
+            border-left-width: 3px;
+            border-left-style: solid;
+            padding-left: 10px;
+            margin-left: 1px;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li {
+            height: 55px;
+            padding: 0 20px;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .home-table .home-tbody .home-tbody-list .home-tbody-li:nth-child(even) {
+            background-color: rgba(167, 180, 203, .14);
+        }
+        .home-table .home-tbody .home-tbody-list .home-tbody-li.c-3-bg {
+            transform: scale(1);
+            box-shadow: 0 0 6px rgba(0,0,0, .12);
+            background-color: #fff;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even {
+            line-height: 55px;
+            float: left;
+            text-align: right;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even:nth-child(1) {
+            width: 18%;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even:nth-child(2) {
+            width: 20%;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even:nth-child(3) {
+            width: 20%;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even:nth-child(3):after {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even:nth-child(4) {
+            width: 15%;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even .rose-label {
+            display: inline-block;
+            width: 70px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            padding: 0;
+            background: none;
+        }
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even .marketIndex {
+            font-size: 14px;
+            color: #A7B4CB;
+            margin-right: 30px;
+        }
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even .rose-label.u-3-bg::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid #52CC8A;
+            border-left: 8px solid transparent;
+            margin-right: 5px;
+            position: relative;
+            top: -13px;
+        }
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even .rose-label.u-6-bg::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 8px solid #eb4d5c;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 8px solid transparent;
+            margin-right: 5px;
+            position: relative;
+            top: 13px;
+        }
+        .f-1-cl {
+            color: #a7b4cb;
+        }
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .buy-button {
+            width: 115px !important;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-radius: 12px;
+            background-color: #1269FF;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            position: absolute;
+            right: 12px;
+            top: 5px;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even .evenSymbol {
+            font-weight: 600 !important;
+            cursor: pointer;
+            font-size: 14px;
+            position: relative;
+            color: #16161F;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even .evenSymbol .coin-label {
+            position: absolute;
+            right: 0;
+            transform: translateX(100%);
+            top: 0;
+            white-space: nowrap;
+            position: absolute;
+            right: -5px;
+            transform: translateX(100%);
+            top: -4px;
+            white-space: nowrap;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 400;
+            padding: 0px 4px;
+            border-radius: 2px;
+            line-height: 17px;
+            overflow: hidden;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even .evenSymbol .coin-label .coin-label {
+            position: relative;
+            z-index: 1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even .evenSymbol .coin-label .coin-bg {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.2;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even .marketIcon {
+            cursor: pointer;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .newPrice {
+            line-height: auto !important;
+            padding-top: 14px;
+            box-sizing: border-box;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .newPrice p {
+            line-height: 15px;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .newPrice .price {
+            font-size: 14px;
+            color: #16161F;
+            font-weight: 600;
+        }
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .newPrice .subPrice {
+            color: #16161F;
+            font-weight: 600;
+        }
+
+        .home-table .home-tbody .home-tbody-list .home-tbody-li .even:first-child {
+            text-align: left;
+            position: relative;
+        }
+
+        .tableContent {
+            position: relative;
+        }
+
+        .tableContent .common-table {
+            background: none;
+        }
+
+        .tableContent .market-title-box {
+            height: 55px;
+            line-height: 53px;
+            padding-right: 320px;
+            padding-left: 20px;
+        }
+
+        .tableContent .market-title {
+            display: flex;
+            text-align: center;
+        }
+
+        .tableContent .market-title li {
+            float: left;
+            height: 53px;
+            line-height: 55px;
+            cursor: pointer;
+            user-select: none;
+            flex: 1;
+            color: #A7B4CB;
+        }
+
+        .tableContent .market-title li.selected {
+            // border-bottom-width: 2px;
+            // order-bottom-style: solid;
+            color: #333;
+        }
+
+        .tableContent .search {
+            position: absolute;
+            top: 12px;
+            right: 20px;
+            height: 28px;
+            line-height: 26px;
+            width: 200px;
+            border-radius: 2px;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        .tableContent .table-body td .rose-label {
+            display: inline-block;
+            width: 70px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            padding: 0;
+        }
+
+        .tableContent .table-body td .symbolName,
+        .tableContent .table-body td .icon-btn {
+            padding: 0;
+            vertical-align: inherit;
+            margin: 0;
+            display: inline-block;
+        }
+
+        .tableContent .table-body td .symbolName {
+            width: 80%;
+            margin-left: 10px;
+        }
+
+        .tableContent .fontSize14 {
+            font-size: 14px;
+        }
+        .tableContent .view-more {
+            width: 363px;
+            height: 56px;
+            line-height: 56px;
+            text-align: center;
+            margin: 50px auto 0;
+            background-color: RGB(18, 105, 255);
+            border-radius: 12px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+    </style>
+    <div class="market-title-box">
+        <ul class="market-title">
+        </ul>
+    </div>
+    <div class="home-table">
+        <ul class="home-thead">
+        </ul>
+        <div class="home-loading">
+            <div class="loading-page">
+                {% import "../loading/loading.njk" as loading %}
+                {{ loading.boxStyle(size=45) }}
+            </div>
+        </div>
+        <div>
+            <div class="home-nodata" style="display: none">
+                <svg class="icon icon-50" aria-hidden="true">
+                    <use xlink:href="#icon-g_2"></use>
+                </svg>
+                <p>
+                    <!-- 暂无数据 -->
+                    {{locale.common.notData}}
+                </p>
+            </div>
+            <div class="home-tbody-box" style="display: none">
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="view-more">{{locale.home.moreMarkets}}</div>
+    </div>
+    <script>
+        (function () {
+            const {myStorage, getScript} = window.BlockChainUtils;
+            const extendPath = "{{sourceMap.marketExtend}}";
+            const websocketPath = "{{sourceMap.webSocket}}";
+            if (extendPath && !window.MarketExtend) {
+                getScript(`${window.staticDomain}/home/static/${extendPath}`).then(() => {
+                    class Market extends window.MarketExtend {
+                        constructor() {
+                            super();
+                            this.$tableContent = document.querySelector('#table-content');
+                            this.$marketTitle = this.$tableContent.querySelector('.market-title');
+                            this.$homeThead = this.$tableContent.querySelector('.home-thead');
+                            this.$homeLoading = this.$tableContent.querySelector('.home-loading');
+                            this.$homeNodata = this.$tableContent.querySelector('.home-nodata');
+                            this.$homeTbody = this.$tableContent.querySelector('.home-tbody-box');
+                            this.$viewMore = this.$tableContent.querySelector('.view-more');
+                            this.optional_symbol_server_open = Number('{{switch.optional_symbol_server_open}}');
+                            this.isLogin = window.isLogin;
+                            this.hoverClass = 'a-12-bd f-1-cl';
+                            this.locale = {
+                                marketSet: "{{locale.home.marketSet}}",
+                                halving: "{{locale.trade.halving}}",
+                                maincon: '{{locale.trade.maincon}}',
+                                newcon: '{{locale.trade.newcon}}',
+                                seecon: '{{locale.trade.seecon}}',
+                                unseal: '{{locale.trade.unseal}}',
+                            };
+                            this.tableDataList = {};
+                            this.listfilter = null;
+                            this.symbolAll = [];
+                            this.marketDataList_bar = [];
+                            this.MainAreaData = [];
+                            this.CreateAreaData = [];
+                            this.SeeAreaData = [];
+                            this.hideAreaData = [];
+                            this.unsealAreaData = [];
+                            this.halveAreaData = [];
+                            this.MainAreaFilter = []; // 主区币种
+                            this.CreateAreaFilter = []; // 创新区币种
+                            this.SeeAreaFilter = []; // 观察区币种
+                            this.hideAreaFilter = []; // 隐藏区币种,
+                            this.unsealAreaFilter = []; // 解封区币种
+                            this.halveAreaFilter = []; // 减半区币种
+                            this.createIng = false;
+                            this.market = [];
+                            this.isScroll = true;
+                            this.setMyMarketSwitch = true;
+                            this.tableTreeData = null;
+                            this.rebuild = false;
+                            this.tableTree = null;
+                            this.firstLoad = false;
+                            this.sortValue = 'sort';
+                            this.sortSell = false;
+                            this.marketCurrent = myStorage.get('homeMarkTitle');
+                            this.columns = [
+                                {
+                                    title: '{{locale.home.market}}', // 市场
+                                    key: 'sort',
+                                    // sortable: true,
+                                },
+                                {
+                                    title: '{{locale.home.close}}', // 最新价
+                                    key: 'closes',
+                                    // sortable: true,
+                                },
+                                {
+                                    title: '{{locale.home.applies}}', // 涨跌幅
+                                    key: 'roses',
+                                    // sortable: true,
+                                }
+                            ];
+                            window.emitter.on('MARKET-DATA', (data, init) => {
+                                if (init) {
+                                    this.rebuild = true;
+                                }
+                                this.initTable(data);
+                            });
+
+                            window.emitter.on('send_market', (data) => {
+                                this.init(data);
+                            });
+
+                            this.$viewMore.addEventListener('click', () => {
+                                console.log('view more')
+                                location.href = '/trade'
+                            }, false)
+                        }
+                    }
+
+                    if (websocketPath && !window.selfSocket) {
+                        getScript(`${window.staticDomain}/home/static/${websocketPath}`);
+                    }
+                    new Market();
+                });
+            }
+            if (websocketPath && !window.selfSocket) {
+                window.selfSocket = true;
+                getScript(`${window.staticDomain}/home/static/${websocketPath}`);
+            }
+        })();
+
+    </script>
+</div>

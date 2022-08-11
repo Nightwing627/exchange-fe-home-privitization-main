@@ -1,0 +1,80 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:width" content="600">
+    <meta property="og:image" content="{{seo.pageContent}}"/>
+    <meta name="twitter:image" content="{{seo.pageContent}}">
+    <meta name="keyWords" content="{{seo.keywords}}"/>
+    <meta name="twitter:title" content="{{seo.title}}"/>
+    <meta property="og:title" content="{{seo.title}}"/>
+    <meta name="description" content="{{seo.description}}">
+    <meta property="og:description" content="{{seo.description}}"/>
+    <meta name="twitter:description" content="{{seo.description}}">
+    <link type="image/x-icon" rel="shortcut icon" href="{{msg.iconUrl}}">
+    <title>{{seo.title}}</title>
+    <link rel="stylesheet" href="{{sourceMap.staticDomain}}/home/static/{{sourceMap['common.css']}}"/>
+    <script src="{{sourceMap.staticDomain}}/home/static/js/security.js"></script>
+    <script src="{{sourceMap.staticDomain}}/home/static/{{sourceMap['iconfont']}}" async id="iconfont"></script>
+    <script src="{{sourceMap.staticDomain}}/home/static/js/event-emitter.min.js"></script>
+    <script src="{{sourceMap.staticDomain}}/home/static/{{sourceMap['tip']}}" async></script>
+    <style>
+        .iScrollVerticalScrollbar .iScrollIndicator{
+            border: 0 !important;
+        }
+        .page-content-chain {
+            padding-top: 24px;
+            padding-left: 30px;
+            padding-right: 30px;
+            box-sizing: border-box;
+            background-color: #F7F7F7;
+        }
+    </style>
+    <script>
+        window.env = "{{ env }}";
+        window.imgMap = {{imgMap | safe}};
+        window.websocketPath = "{{sourceMap['websocket-work']}}";
+        window.emitter = new EventEmitter();
+        window.staticDomain = "{{sourceMap.staticDomain}}";
+        window.coinTagOpen = '{{ switch.coin_tag_open }}';
+        window.publicInfo = {
+            skin: {{ skin | dump | safe}},
+        lan: {
+            defLan: "{{ lan.defLan }}"
+        }
+        }
+    </script>
+    <script inline-html></script>
+    <script>
+        const { getScript } = window.BlockChainUtils;
+        window.addEventListener('resize', () => {
+            emitter.emit('resize');
+        });
+        var lan = window.location.href.match(/[a-z]+_[A-Z]+/)[0];
+        fetch('/home/getMarket/' + lan).then((res) => res.json()).then((data) => {
+           window.market = data;
+           emitter.emit('getMarket', data);
+        });
+        const homeDialog = "{{sourceMap.homeDialog}}";
+    </script>
+</head>
+<body class="inx b-2-cl Chainer">
+{% include "modules/header/china.njk" %}
+<div class="page-content page-content-chain" style="position: relative; min-height: 800px" id="app">
+    {% include templateModule %}
+</div>
+
+{% if switch.index_temp_type != '8'%}
+{% include "modules/footer/china.njk" %}
+{% endif %}
+<script>
+    {{ msg.config_footer_js | safe }}
+</script>
+</body>
+</html>

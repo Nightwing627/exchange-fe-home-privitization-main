@@ -1,0 +1,14 @@
+2022-04-15 19:19:25,430 INFO 6948 [egg:logger] init all loggers with options: {"dir":"D:\\Develop\\Vue\\KnoxEx\\Home\\logs\\exchange-vue-home","encoding":"utf8","env":"unittest","level":"INFO","consoleLevel":"WARN","disableConsoleAfterReady":false,"outputJSON":false,"buffer":false,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"agent"}
+2022-04-15 19:19:25,462 INFO 6948 [egg:core] dump config after load, 17ms
+2022-04-15 19:19:25,795 INFO 6948 [egg-watcher:agent] watcher start success
+2022-04-15 19:19:25,898 INFO 6948 [egg:core] dump config after ready, 56ms
+2022-04-15 19:20:32,827 INFO 2940 [egg:logger] init all loggers with options: {"dir":"D:\\Develop\\Vue\\KnoxEx\\Home\\logs\\exchange-vue-home","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"agent"}
+2022-04-15 19:20:32,836 INFO 2940 [egg:core] dump config after load, 5ms
+2022-04-15 19:20:32,890 INFO 2940 [egg-watcher] Start watching: ["D:\\Develop\\Vue\\KnoxEx\\Home\\app","D:\\Develop\\Vue\\KnoxEx\\Home\\config","D:\\Develop\\Vue\\KnoxEx\\Home\\mocks","D:\\Develop\\Vue\\KnoxEx\\Home\\mocks_proxy","D:\\Develop\\Vue\\KnoxEx\\Home\\app.js"]
+2022-04-15 19:20:32,890 INFO 2940 [egg-watcher] Start watching: "D:\\Develop\\Vue\\KnoxEx\\Home\\app"
+2022-04-15 19:20:32,890 INFO 2940 [egg-watcher] Start watching: "D:\\Develop\\Vue\\KnoxEx\\Home\\config"
+2022-04-15 19:20:32,890 INFO 2940 [egg-watcher] Start watching: "D:\\Develop\\Vue\\KnoxEx\\Home\\mocks"
+2022-04-15 19:20:32,891 INFO 2940 [egg-watcher] Start watching: "D:\\Develop\\Vue\\KnoxEx\\Home\\mocks_proxy"
+2022-04-15 19:20:32,891 INFO 2940 [egg-watcher] Start watching: "D:\\Develop\\Vue\\KnoxEx\\Home\\app.js"
+2022-04-15 19:20:32,892 INFO 2940 [egg-watcher:agent] watcher start success
+2022-04-15 19:20:32,920 INFO 2940 [egg:core] dump config after ready, 17ms

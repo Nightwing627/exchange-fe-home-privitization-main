@@ -1,0 +1,19 @@
+<div class="bulletinBoard">
+    {% if noticeList.length %}
+    <div class="bull-bar">
+        <p class="notice-item">
+            <img class="new" src="{{sourceMap.om_new}}" alt="">
+            <a class="hoverHide x-2-cl" href="/noticeInfo/{{noticeList[0].id}}">
+                {{ noticeList[0].noticeText }}
+            </a>
+            <a class="hoverShow x-1-cl" href="/noticeInfo/{{noticeList[0].id}}">
+                {{noticeList[0].noticeText }}
+            </a>
+        </p>
+        <a class="moreButton" href="/noticeInfo">
+            <img class="right-icon" src="{{sourceMap.om_gg}}" alt="">
+        </a>
+    </div>
+    {% endif %}
+    <script></script>
+</div>

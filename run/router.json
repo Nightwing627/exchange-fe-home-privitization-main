@@ -1,0 +1,50 @@
+[
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/home/getMarket/:id",
+    "regexp": "/^\\/home\\/getMarket\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": 0,
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": true,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": ".+"
+      }
+    ],
+    "path": "/(.+)?/",
+    "regexp": "/^(?:\\/((?:.+)))?(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  }
+]

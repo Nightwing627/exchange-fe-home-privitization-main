@@ -1,0 +1,170 @@
+<section class="bitWind-recommend recommend-bitwind-contianer">
+    <style>
+        .bitWind-recommend.recommend-bitwind-contianer {
+            height: 60px;
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: fixed;
+            background: #001624;
+            z-index: 999;
+            bottom: 0;
+            left: 0;
+        }
+        .bitWind-recommend.recommend-bitwind-contianer .ulCenter {
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        .bitWind-recommend.recommend-bitwind-contianer .recommend-even {
+            width: 200px;
+            padding: 25px 0;
+            box-sizing: border-box;
+            float: left;
+            height: 60px;
+            position: relative;
+            cursor: pointer;
+        }
+        .bitWind-recommend.recommend-bitwind-contianer .recommend-even .bl {
+            height: 70px;
+            width: 1px;
+            position: absolute;
+            left: 0;
+            top: 25px;
+        }
+        .bitWind-recommend.recommend-bitwind-contianer .recommend-even:first-child .bl {
+            width: 0;
+        }
+        .bitWind-recommend.recommend-bitwind-contianer .symbol {
+            font-size: 14px;
+            float: left;
+            color: #fff;
+        }
+        .bitWind-recommend.recommend-bitwind-contianer .price {
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        .bitWind-recommend.recommend-bitwind-contianer .rose-icon {
+            float: left;
+            margin-left: 5px;
+        }
+        .bitWind-recommend.recommend-bitwind-contianer .volume {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        .bitWind-recommend.recommend-bitwind-contianer .rose {
+            float: left;
+            margin-left: 12px;
+            font-size: 14px;
+        }
+        .bitWind-recommend.recommend-bitwind-contianer .kline {
+            width: 90px;
+            height: 32px;
+            position: absolute;
+            bottom: 36px;
+            right: 20px;
+        }
+        .play{
+            -webkit-animation: 60s rowup linear infinite normal;
+            animation: 60s rowup linear infinite normal;
+        }
+
+    </style>
+    <ul class="recommend-ul clearfix recommend-wrap play">
+        {% for item in headerSymbol %}
+        <li class="recommend-even recommend-content" data-coin="{{item}}">
+            <div class="symbol">{{helper.recommend.getCoinShowName(item, symbolAll)}}</div>
+            <div class="rose recommendPrice">{{ item.price }}</div>
+            <span class="rose-icon">
+                <img src="" alt="">
+            </span>
+        </li>
+        {% endfor %}
+        {% if headerSymbol.length > 4%}
+        {% for item in headerSymbol %}
+        <li class="recommend-even recommend-content cloned" data-coin="{{item}}-c">
+            <div class="symbol">{{helper.recommend.getCoinShowName(item, symbolAll)}}</div>
+            <div class="rose recommendPrice">{{ item.price }}</div>
+            <span class="rose-icon">
+                <img src="" alt="">
+            </span>
+        </li>
+        {% endfor %}
+        {% endif%}
+    </ul>
+    <script>
+        (() => {
+            const extendPath = "{{sourceMap.recommendExtend}}";
+            const {getScript} = window.BlockChainUtils;
+            const websocketPath = "{{sourceMap.webSocket}}";
+            if (extendPath && !window.RecommendExtend){
+                getScript(`${window.staticDomain}/home/static/${extendPath}`).then(() => {
+                    class Recommend extends window.RecommendExtend{
+                        constructor() {
+                            super();
+                            this.$recommend = document.querySelector('.recommend-bitwind-contianer');
+                            this.upPng = "{{sourceMap.0_icon_up}}";
+                            this.downPng = "{{sourceMap.0_icon_down}}";
+                            this.echartsPath = "{{sourceMap.staticDomain}}/home/static/js/echarts.min.js";
+                            this.liItemWidth = 200;
+                            this.cusKlineColor = '#9CA1C2';
+                            this.cusLineWidth = '1';
+                            this.setWarpWdith = true;
+                            this.init();
+                        }
+                        resloveKline(){
+
+                        }
+                        resloveRecommendData(data){
+                            const { recommendDataList, coinList, coinTagLangs } = data;
+                            const keys = Object.keys(recommendDataList);
+                            keys.forEach((item) => {
+                                const coinLabel = (recommendDataList[item] && recommendDataList[item].symbol)
+                                    ? this.getCoinLabel(recommendDataList[item].symbol.symbol, coinList, coinTagLangs)
+                                    : '';
+                                recommendDataList[item].coinLabel = coinLabel;
+                            });
+                            this.dataList = recommendDataList;
+                            this.$recommendContent.forEach((item, index) => {
+                                const { coin } = item.dataset;
+                                const coinC = coin.replace('-c', '');
+                                const { coinLabel } = this.dataList[coinC];
+                                const len = this.$recommendContent.length;
+                                let recommendTimeVal = '';
+                                if (this.dataList[coinC].rose && this.dataList[coinC].rose.data.indexOf('+') > -1){
+                                    item.querySelector('img').setAttribute('src', this.upPng);
+                                }else{
+                                    item.querySelector('img').setAttribute('src', this.downPng);
+                                }
+                                if (this.dataList[coinC]) {
+                                    const $recommendType = this.domTree[coin].recommendPrice;
+                                    const $recommendTime = this.domTree[coin].recommendTime;
+                                    if ($recommendTime) {
+                                        recommendTimeVal = $recommendTime.innerHTML;
+                                    }
+                                    const recommendTimeNVal = `24H Vol ${this.dataList[coinC].vol}`;
+                                    const recommendTypeVal = $recommendType.innerHTML;
+                                    const recommendTypeNVal = this.dataList[coinC].close ? this.dataList[coinC].close.data : '';
+
+                                    if (recommendTimeVal && recommendTimeVal !== recommendTimeNVal) {
+                                        $recommendTime.innerHTML = recommendTimeNVal;
+                                    }
+                                    if (recommendTypeVal !== recommendTypeNVal) {
+                                        $recommendType.innerHTML = recommendTypeNVal;
+                                    }
+                                }
+                                if (!this.labelisShow) {
+                                    this.labelShow(coinLabel, coin, len, index);
+                                }
+                            });
+                        }
+                    }
+                    new Recommend();
+                });
+            }
+            if (websocketPath && !window.selfSocket){
+                window.selfSocket = true;
+                getScript(`${window.staticDomain}/home/static/${websocketPath}`);
+            }
+        })();
+    </script>
+</section>

@@ -1,0 +1,418 @@
+{% macro boxStyle(slideList, extendPath, title, subTitle, locale, bigSlide, helper, link) %}
+<section class="king-swiper-base">
+    <style>
+        .king-swiper-base {
+            height: 480px;
+            background: url("https://saas-oss.oss-accelerate.aliyuncs.com/upload/20200218155653467.png") no-repeat center center;
+        }
+
+        .king-swiper-base .king-box {
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .king-swiper-base .king-box .king-otc-content-sm {
+            transform: scale(0.93);
+            opacity: 0.1;
+        }
+
+        .king-swiper-base .king-box .king-otc-content {
+            transition: all 0.3s ease;
+            position: absolute;
+            top: 120px;
+        }
+
+        .king-swiper-base .king-box .king-otc-content .king-otc-text1 {
+            font-size: 40px;
+            line-height: 60px;
+        }
+
+        .king-swiper-base .king-box .king-otc-content .king-otc-text2 {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .king-swiper-base .king-box .king-otc-content .king-otc-options {
+            margin-top: 90px;
+        }
+
+        .king-swiper-base .king-box .king-otc-content .king-otc-coin {
+            background: #fff;
+            height: 60px;
+            width: 80px;
+            float: left;
+            line-height: 60px;
+            text-align: center;
+            color: #1f3f59;
+            font-size: 16px;
+        }
+
+        .king-swiper-base .king-box .king-otc-content .king-otc-inp {
+            background: #fff;
+            height: 60px;
+            width: 200px;
+            float: left;
+        }
+
+        .king-swiper-base .king-box .king-otc-content .king-otc-inp input {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            font-size: 16px;
+        }
+
+        .king-swiper-base .king-box .king-otc-content .king-otc-btn {
+            background: #449fff;
+            border-radius: 0 2px 2px 0;
+            height: 60px;
+            float: left;
+            line-height: 60px;
+            text-align: center;
+            width: 160px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .king-swiper-base .king-box .king-img-content {
+            position: absolute;
+            transition: all .3s ease;
+            right: 0;
+            z-index: 1;
+            bottom: 60px;
+            color: #f00;
+        }
+
+        .king-swiper-base .king-box .king-img-content .bigPage-box {
+            position: absolute;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .king-swiper-base .king-box .king-img-content .bigPage-box .bigPage-box-even {
+            width: 20px;
+            height: 2px;
+            background: #fff;
+            opacity: 0.25;
+            float: left;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .king-swiper-base .king-box .king-img-content .bigPage-box .bigPage-box-even:last-child {
+            margin-right: 0;
+        }
+
+        .king-swiper-base .king-box .king-img-content .bigPage-box .bigPage-box-active {
+            opacity: 0.6 !important;
+        }
+
+        .king-swiper-base .king-box .king-img-content .side-box {
+            position: absolute;
+            right: 0;
+            bottom: -34px;
+        }
+
+        .king-swiper-base .king-box .king-img-content .king-type-big {
+            width: 1200px;
+            overflow: hidden;
+        }
+
+        .king-swiper-base .king-box .king-img-content .king-imgs-big {
+            transition: all 0.3s ease;
+        }
+
+        .king-swiper-base .king-box .king-img-content .king-type-small {
+            width: 285px;
+            overflow: hidden;
+        }
+
+        .king-swiper-base .king-box .king-img-content .king-imgs-small {
+
+        }
+
+        .king-swiper-base .king-box .king-img-content .king-imgs-even {
+            width: 285px;
+            height: 150px;
+            float: left;
+        }
+
+        .king-swiper-base .king-box .king-img-content .king-imgs-even img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .king-swiper-base .king-box .king-img-content .king-imgs {
+            overflow: hidden;
+            height: 150px;
+        }
+
+        .king-swiper-base .king-box .king-jt-l {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #6a7a97;
+            border-radius: 50%;
+            cursor: pointer;
+            line-height: 40px;
+            box-sizing: border-box;
+        }
+
+        .king-swiper-base .king-box .king-jt-l .king-jt {
+            width: 6px;
+            height: 6px;
+            border-top: 2px solid #6a7a97;
+            border-right: 2px solid #6a7a97;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%) rotate(220deg);
+            display: inline-block;
+            margin-left: 8px;
+        }
+
+        .king-swiper-base .king-box .king-jt-r:hover,
+        .king-swiper-base .king-box .king-jt-l:hover {
+            border: 2px solid #d8e1f0;
+        }
+
+        .king-swiper-base .king-box .king-jt-r:hover .king-jt,
+        .king-swiper-base .king-box .king-jt-l:hover .king-jt {
+            border-top: 2px solid #d8e1f0;
+            border-right: 2px solid #d8e1f0;
+        }
+
+        .king-swiper-base .king-box .king-jt-r {
+            width: 24px;
+            height: 24px;
+            border: 1px solid #6a7a97;
+            border-radius: 50%;
+            line-height: 40px;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+        .king-swiper-base .king-box .king-jt-r .king-jt {
+            width: 6px;
+            height: 6px;
+            border-top: 2px solid #6a7a97;
+            border-right: 2px solid #6a7a97;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%) rotate(45deg);
+            display: inline-block;
+            margin-left: 7px;
+        }
+
+        .king-swiper-base .margin {
+            margin-right: 20px;
+        }
+    </style>
+    <div class="king-box">
+        <div class="king-otc-content">
+            <div class="king-otc-text1"
+                 style="color: #fff">{{ title | safe }}
+            </div>
+            <!-- <div class="king-otc-text1 f-1-cl">of Transaction System Solutions</div> -->
+            <div class="king-otc-text2"
+                 style="color: #fff">{{ subTitle | safe }}
+            </div>
+            <div class="king-otc-options clearfix">
+                <div class="king-otc-coin" style="border-radius: 2px 0 0 2px">USDT</div>
+                <div class="king-otc-inp">
+                    <input type="text" placeholder="{{ locale.kingAdd.input }}"></div>
+                <div class="king-otc-coin">CNY</div>
+                <a class="king-otc-btn" href="{{ link }}" target="_block">
+                    {{ locale.kingAdd.buy }}</a>
+            </div>
+        </div>
+        {% if bigSlide.length %}
+        <div class="king-img-content">
+            <div class="side-box">
+                <div class="king-jt-l nav-click">
+                    <div class="king-jt"></div>
+                </div>
+            </div>
+            <div class="king-imgs king-type-small">
+                <div class="king-imgs-small clearfix">
+                    {% for item in bigSlide %}
+                    <a class="king-imgs-even"
+                       target="_blank"
+                       href="{{item.httpUrl}}">
+                        <img src="{{item.imageUrl}}" alt="">
+                    </a>
+                    {% endfor %}
+                    <a class="king-imgs-even"
+                       target="_blank"
+                       href="{{bigSlide[0].httpUrl}}">
+                        <img src="{{bigSlide[0].imageUrl}}" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="king-imgs king-type-big" style="display: none">
+                <div class="king-imgs-big clearfix">
+                    {% for item in bigSlide %}
+                    {% if helper.swiper.getBigStyle(loop.index) %}
+                    <a class="king-imgs-even margin" href="{{item.httpUrl}}" target="_blank">
+                        <img src="{{item.imageUrl}}" alt="">
+                    </a>
+                    {% else %}
+                    <a class="king-imgs-even" href="{{item.httpUrl}}" target="_blank">
+                        <img src="{{item.imageUrl}}" alt="">
+                    </a>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="bigPage-box clearfix" style="display: none">
+                {% for li in slideList %}
+                {% if loop.index0 == 0 %}
+                <div class="bigPage-box-even bigPage-box-active">
+                </div>
+                {% else %}
+                <div class="bigPage-box-even">
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <script>
+        (() => {
+            class KingSwiper {
+                constructor() {
+                    this.$swiper = document.querySelector('.king-swiper-base');
+                    this.$kingOtcContent = this.$swiper.querySelector('.king-otc-content');
+                    this.$swiperContent = this.$swiper.querySelector('.king-img-content');
+                    if (this.$swiperContent) {
+                        this.$smallContent = this.$swiper.querySelector('.king-imgs-small');
+                        this.$bigContent = this.$swiper.querySelector('.king-imgs-big');
+                        this.$smallType = this.$swiper.querySelector('.king-type-small');
+                        this.$bigType = this.$swiper.querySelector('.king-type-big');
+                        this.$bigPageType = this.$swiper.querySelector('.bigPage-box');
+                        this.$smallList = this.$smallContent.querySelectorAll('a');
+                        this.$navClick = this.$swiper.querySelector('.nav-click');
+                        this.smallLen = this.$smallList.length;
+                        this.bigLen = Math.ceil(this.smallLen / 4);
+                        this.$bigPageEven = this.$swiper.querySelectorAll('.bigPage-box-even');
+                        this.flag = false;
+                        this.bigPage = 0;
+                        this.smallTimer = null;
+                        this.smallInTimer = null;
+                        this.bigTimer = null;
+                        this.smallPage = 0;
+                        this.smallSize = 285;
+                        this.bigSize = 1200;
+                        this.bigInitTimer = null;
+                        this.init();
+                    }
+                }
+
+                bindEvent() {
+                    this.$navClick.addEventListener('click', (e) => {
+                        if (this.$navClick.classList.contains('king-jt-l')) {
+                            this.$navClick.classList.remove('king-jt-l');
+                            this.$navClick.classList.add('king-jt-r');
+                            this.$kingOtcContent.classList.add('king-otc-content-sm');
+                            this.$swiperContent.style.width = this.bigSize + 'px';
+                            this.$smallType.style.display = 'none';
+                            this.$bigType.style.display = 'block';
+                            this.$bigPageType.style.display = 'block';
+                        } else {
+                            this.$navClick.classList.add('king-jt-l');
+                            this.$navClick.classList.remove('king-jt-r');
+                            this.$kingOtcContent.classList.remove('king-otc-content-sm');
+                            this.$swiperContent.style.width = this.smallSize + 'px';
+                            this.$smallType.style.display = 'block';
+                            this.$bigType.style.display = 'none';
+                            this.$bigPageType.style.display = 'none';
+                        }
+                    }, false);
+                    this.$bigPageEven.forEach((item, inx) => {
+                        item.addEventListener('click', () => {
+                            this.bigPage = inx;
+                            this.bigRun();
+                            clearTimeout(this.bigTimer);
+                            this.bigTimer = setTimeout(this.bigAuto.bind(this), 5000);
+                        }, false);
+                        item.addEventListener('mouseover', () => {
+                            clearTimeout(this.bigTimer);
+                            this.bigTimer = null;
+                        }, false);
+                        item.addEventListener('mouseout', () => {
+                            clearTimeout(this.bigTimer);
+                            this.bigTimer = null;
+                            this.bigTimer = setTimeout(this.bigAuto.bind(this), 5000);
+                        }, false);
+                    });
+                }
+
+                bigAuto() {
+                    clearTimeout(this.bigTimer);
+                    this.bigPage += 1;
+                    this.bigRun();
+                    this.bigTimer = setTimeout(() => {
+                        this.bigAuto();
+                    }, 5000);
+                }
+
+                bigRun() {
+                    if (this.bigPage >= this.bigLen) {
+                        this.bigPage = 0;
+                    }
+                    this.$bigContent.style.marginLeft = `${-this.bigPage * this.bigSize}px`;
+                    this.setEvenActive();
+                }
+
+                setEvenActive() {
+                    this.$bigPageEven.forEach((item) => {
+                        item.classList.remove('bigPage-box-active');
+                    });
+                    this.$bigPageEven[this.bigPage].classList.add('bigPage-box-active');
+                }
+
+                smallAuto() {
+                    clearTimeout(this.smallTimer);
+                    this.smallPage += 1;
+                    if (this.smallPage >= this.smallLen) {
+                        this.smallPage = 0;
+                        this.$smallContent.style.transition = 'none';
+                        this.$smallContent.style.marginLeft = `0px`;
+                        //       this.smallAuto();
+                        return;
+                    }
+                    clearTimeout(this.smallInTimer);
+                    this.smallInTimer = setTimeout(() => {
+                        this.$smallContent.style.transition = 'all .3s ease';
+                        this.$smallContent.style.marginLeft = `${-this.smallPage * this.smallSize}px`;
+                        this.smallTimer = setTimeout(() => {
+                            //          this.smallAuto();
+                        }, 5000);
+                    }, 0)
+                }
+
+                setSmallContent() {
+                    this.$smallContent.style.width = `${this.smallLen * this.smallSize}px`;
+                    this.$bigContent.style.width = `${this.bigLen * this.bigSize}px`;
+                }
+
+                setSwiperContent() {
+                    this.$swiperContent.style.width = this.smallSize + 'px';
+                }
+
+                init() {
+                    this.setSwiperContent();
+                    this.setSmallContent();
+                    clearTimeout(this.bigTimer);
+                    this.bindEvent();
+                }
+            }
+
+            new KingSwiper();
+        })();
+    </script>
+</section>
+{% endmacro %}

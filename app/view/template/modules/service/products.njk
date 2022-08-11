@@ -1,0 +1,136 @@
+<div class="products" id="products">
+  <style>
+    .products {
+      padding: 63px 120px 86px;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+    .products .title {
+      font-size: 40px;
+      color: #16161F;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .products .title span {
+      font-weight: 600;
+    }
+    .products .sub-title {
+      font-size: 18px;
+      color: #16161F;
+      text-align: center;
+    }
+    .products .products-list {
+      margin-top: 70px;
+      display: flex;
+    }
+    .products .products-list .products-item {
+      flex: 1;
+      margin-right: 124px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .products .products-list .products-item:last-child {
+      margin-right: 0;
+    }
+    .products .products-list .products-item .label {
+      font-weight: 700;
+      font-size: 16px;
+      color: #16161F;
+      line-height: 22px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .products .products-list .products-item .tip {
+      height: 54px;
+      font-size: 14px;
+      color: #16161F;
+      line-height: 18px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .products .products-list .products-item img {
+      width: 192px;
+    }
+    .products .btn-box {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .products .btn-box .btn {
+      width: 363px;
+      height: 56px;
+      line-height: 56px;
+      text-align: center;
+      border-radius: 12px;
+      background-color: #1269FF;
+      cursor: pointer;
+      font-size: 16px;
+      color: #fff;
+    }
+  </style>
+
+  <p class="title">
+    <span>{{locale.home.title6}}</span>{{locale.home.service}}
+  </p>
+  <p class="sub-title">
+    {{locale.home.subTitle6}}
+  </p>
+  <ul class="products-list">
+    <li class="products-item">
+      <p class="label">
+        {{locale.home.title7}}
+      </p>
+      <p class="tip">
+        {{locale.home.subTitle7}}
+      </p>
+      <img src="{{sourceMap.Knox_GlobalLayout}}" alt="">
+    </li>
+    <li class="products-item">
+      <p class="label">
+        {{locale.home.title8}}
+      </p>
+      <p class="tip">
+        {{locale.home.subTitle8}}
+      </p>
+      <img src="{{sourceMap.KnoxExchange}}" alt="">
+    </li>
+    <li class="products-item">
+      <p class="label">
+        {{locale.home.title9}}
+      </p>
+      <p class="tip">
+        {{locale.home.subTitle9}}
+      </p>
+      <img src="{{sourceMap.Knox_Seсurity}}" alt="">
+    </li>
+    <li class="products-item">
+      <p class="label">
+        {{locale.home.title10}}
+      </p>
+      <p class="tip">
+        {{locale.home.subTitle10}}
+      </p>
+      <img src="{{sourceMap.Knox_Scalability}}" alt="">
+    </li>
+  </ul>
+  <div class="btn-box">
+    <div class="btn">
+      {{locale.home.start}}
+    </div>
+  </div>
+
+  <script>
+    (function () {
+
+      const $product = document.querySelector('#products');
+      const $startBtn = $product.querySelector('.btn');
+
+      $startBtn.addEventListener('click', () => {
+        location.href = '/trade'
+      }, false)
+    })();
+  </script>
+</div>

@@ -1,0 +1,626 @@
+<div class="homes japanese-home-container" style="background-color: #fff">
+    <style>
+        .japanese-home-container .japanese-header {
+            background-image: linear-gradient(-179deg, #0046bb 0%, #083687 100%);
+            padding-top: 65px;
+            color: #fff;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard {
+            padding-top: 8px;
+            margin: 0 auto;
+            width: 820px;
+            height: 40px;
+            text-align: center;
+            position: relative;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard .backgrounds {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard .bull-bar .notice-item {
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            padding-left: 15px;
+            box-sizing: border-box;
+            line-height: 40px;
+            height: 40px;
+            color: #fff;
+            margin-bottom: 0;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard .bull-bar .notice-item:first-child {
+            padding-left: 0;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard .bull-bar .notice-item .hoverHide {
+            color: #fff;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard .bull-bar .notice-item i {
+            margin-left: 20px;
+            display: inline-block;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard .bull-bar .notice-item:last-child i {
+            display: none;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard .bull-bar .notice-item .new {
+            width: 32px;
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard .bull-bar .moreButton {
+            height: 40px;
+            line-height: 40px;
+            width: 17px;
+            vertical-align: middle;
+            position: relative;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard .bull-bar .moreButton .right-icon {
+            width: 16px;
+            vertical-align: middle;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard .bull-bar .moreButton b {
+            top: 0;
+            left: 0;
+            position: absolute;
+            display: inline-block;
+            height: 10px;
+            width: 17px;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard .bull-bar .moreButton .hover-show {
+            display: none;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard .bull-bar .moreButton:hover .hover-hide {
+            display: none;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard .bull-bar .moreButton:hover .hover-show {
+            display: block;
+        }
+        .japanese-home-container .japanese-header .bulletinBoard .more {
+            position: absolute;
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            text-align: right;
+            right: 20px;
+            top: 7px;
+        }
+        .japanese-home-container .japanese-header h1 {
+            font-size: 44px;
+            text-align: center;
+            line-height: 42px;
+            margin-bottom: 20px;
+        }
+        .japanese-home-container .japanese-header p {
+            font-size: 18px;
+            text-align: center;
+            line-height: 18px;
+            margin-bottom: 40px;
+        }
+        .japanese-home-container .japanese-header .register-region {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 2px;
+            width: 758px;
+            padding: 10px 32px 10px 30px;
+            margin: 0 auto;
+        }
+        .japanese-home-container .japanese-header .register-info {
+            border: 1px solid #ddd !important;
+            border-radius: 2px;
+            height: 44px;
+            width: 300px;
+            font-size: 14px;
+            color: #aaa;
+            line-height: 44px;
+            margin-right: 17px;
+        }
+        .japanese-home-container .japanese-header .register-info .input-find-content input {
+            color: #aaa !important;
+        }
+        .japanese-home-container .japanese-header .download-button,
+        .japanese-home-container .japanese-header .register-info,
+        .japanese-home-container .japanese-header .go-register {
+            float: left;
+            height: 44px;
+            line-height: 44px;
+        }
+        .japanese-home-container .japanese-header .go-register {
+            margin-right: 20px;
+            background: #2480f5 !important;
+        }
+        .japanese-home-container .japanese-header .download-button {
+            margin-right: 20px;
+            background: #000 !important;
+            border-radius: 2px;
+            text-align: left;
+        }
+        .japanese-home-container .japanese-header .download-button .icon {
+            margin-top: 3px;
+            vertical-align: -0.3em;
+        }
+        .japanese-home-container .japanese-header .no-margin {
+            margin-right: 0;
+        }
+        .japanese-home-container .japanese-header .header-img {
+            width: 900px;
+            height: 445px;
+            margin: 0 auto;
+            margin-top: 198px;
+        }
+        .japanese-home-container .qa-container {
+            background-color: #f8f8f8;
+            padding-top: 80px;
+        }
+        .japanese-home-container .qa-region {
+            padding-bottom: 80px;
+            width: 1100px;
+            margin: 0 auto;
+        }
+        .japanese-home-container .qa-region h1 {
+            font-size: 36px;
+            color: #31363e;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .japanese-home-container .qa-region p {
+            font-size: 16px;
+            color: #828ea1;
+            text-align: center;
+            line-height: 16px;
+            margin-bottom: 76px;
+        }
+        .japanese-home-container .qa-region li {
+            margin-bottom: 30px;
+        }
+        .japanese-home-container .qa-region .q-region,
+        .japanese-home-container .qa-region .a-region {
+            height: 60px;
+            border-radius: 2px 2px 0px 0px;
+            line-height: 60px;
+            padding-left: 21px;
+            padding-right: 10px;
+        }
+        .japanese-home-container .qa-region .q-region {
+            background: #2480f5;
+            color: #fff;
+            font-size: 18px;
+        }
+        .japanese-home-container .qa-region .q-region .arrow-region {
+            float: right;
+            height: 60px;
+            line-height: 60px;
+            width: 24px;
+            position: relative;
+        }
+        .japanese-home-container .qa-region .q-region .arrow-region .icon{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .japanese-home-container .qa-region .q-region .arrow-region .q-icon{
+            transform: translateY(-50%) rotateZ(180deg);
+        }
+        .japanese-home-container .qa-region .a-region {
+            background: #fff;
+            color: #555;
+            font-size: 14px;
+            box-shadow: 0px 2px 16px rgba(0,0,0,0.1);
+        }
+        .japanese-home-container .japanese-swipers {
+            padding-top: 0;
+            position: relative;
+            top: 0;
+        }
+        .japanese-home-container .japanese-swipers .carousel-wrap {
+            top: auto;
+            bottom: 50px;
+        }
+        .japanese-home-container .input-find-content input{
+            height: 44px;
+        }
+        .japanese-header .register-info input {
+            color: #31363e !important;
+        }
+        .japanese-swipers .carousel-items {
+            background-color: transparent !important;
+            top: auto;
+            bottom: 65px;
+        }
+        .japanese-swipers .carousel-items span {
+            background-color: rgba(255,255,255,0.3);
+            height: 12px !important;
+            width: 12px !important;
+            margin-right: 10px;
+        }
+        .japanese-swipers .carousel-items span:last-of-type {
+            margin-right: 0;
+        }
+        .japanese-swipers .jp-active {
+            background-color: #fff !important;
+        }
+        .japanese .navsBase {
+            margin-bottom: 46px;
+            height: auto;
+            padding-top: 83px;
+        }
+        .japanese .navsBase .title {
+            color: #31363e;
+            font-size: 36px;
+        }
+        .japanese .navsBase .mess {
+            font-size: 16px;
+            color: #828ea1;
+            text-align: center;
+            line-height: 16px;
+        }
+        .japanese .exchange-top {
+            background: #0046bb;
+            background-image: linear-gradient(-179deg, #0046bb 0%, #083687 100%);
+            padding-top: 145px;
+            padding-bottom: 106px;
+        }
+        .japanese .exchange-top h1 {
+            font-size: 36px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .japanese .exchange-top p {
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 55px;
+        }
+        .japanese .exchange-top .exchange-img-region {
+            text-align: center;
+        }
+        .japanese .exchange-top .img-box {
+            display: inline-block;
+        }
+        .japanese .exchange-top .img-box:nth-child(1) {
+            margin-right: 50px;
+        }
+        .japanese .exchange-top .img-box p {
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            line-height: 18px;
+        }
+        .japanese .exchange-top .exchange-top-img {
+            width: 72px;
+            height: 72px;
+        }
+        .japanese .register-step {
+            padding-top: 108px;
+            padding-bottom: 80px;
+            height: 1344px;
+        }
+        .japanese .register-step h1 {
+            font-size: 36px;
+            color: #31363e;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .japanese .register-step p {
+            font-size: 16px;
+            color: #828ea1;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .japanese .register-step .step-list {
+            width: 744px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .japanese .register-step .step-list li {
+            position: absolute;
+        }
+        .japanese .register-step .step-list li:nth-child(1) {
+            top: 0;
+            left: -15px;
+            width: 205px;
+        }
+        .japanese .register-step .step-list li:nth-child(2) {
+            top: 70px;
+            right: 15px;
+            width: 380px;
+        }
+        .japanese .register-step .step-list li:nth-child(2) h1 {
+            text-align: left;
+        }
+        .japanese .register-step .step-list li:nth-child(2) p {
+            text-align: left;
+        }
+        .japanese .register-step .step-list li:nth-child(3) {
+            top: 350px;
+            right: 0;
+            width: 205px;
+        }
+        .japanese .register-step .step-list li:nth-child(4) {
+            top: 520px;
+            left: 10px;
+            width: 380px;
+        }
+        .japanese .register-step .step-list li:nth-child(4) h1 {
+            text-align: right;
+        }
+        .japanese .register-step .step-list li:nth-child(4) p {
+            text-align: right;
+        }
+        .japanese .register-step .step-list li:nth-child(4) h3 span {
+            float: right;
+        }
+        .japanese .register-step .step-list li:nth-child(5) {
+            top: 800px;
+            left: -15px;
+            width: 205px;
+        }
+        .japanese .register-step .step-list li:nth-child(6) {
+            top: 998px;
+            right: 15px;
+            width: 380px;
+        }
+        .japanese .register-step .step-list li:nth-child(6) h1 {
+            text-align: left;
+        }
+        .japanese .register-step .step-list li:nth-child(6) p {
+            text-align: left;
+        }
+        .japanese .register-step .step-list h1 {
+            font-size: 26px;
+            color: #31363e;
+            margin-bottom: 22px;
+        }
+        .japanese .register-step .step-list h3 {
+            margin-bottom: 22px;
+        }
+        .japanese .register-step .step-list h3 span {
+            font-size: 30px;
+            color: #2480f5;
+            border-bottom: 4px solid #31363e;
+            width: 40px;
+            float: left;
+            padding-bottom: 10px;
+        }
+        .japanese .register-step .step-list p {
+            font-size: 16px;
+            color: #828ea1;
+        }
+        .japanese .register-step .step-list img {
+            width: 251px;
+            height: 456px;
+        }
+        .japanese .product-region {
+            width: 1376px;
+            height: 765px;
+            margin: 0 auto;
+            margin-top: 71px;
+            position: relative;
+        }
+        .japanese .product-region li {
+            position: absolute;
+            width: 264px;
+        }
+        .japanese .product-region li h1 {
+            font-size: 20px;
+            color: #31363e;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .japanese .product-region li p {
+            font-size: 16px;
+            color: #828ea1;
+            text-align: center;
+            line-height: 28px;
+        }
+        .japanese .product-region li:nth-child(1) {
+            top: 200px;
+            left: 100px;
+        }
+        .japanese .product-region li:nth-child(2) {
+            top: 110px;
+            left: 400px;
+        }
+        .japanese .product-region li:nth-child(3) {
+            top: 110px;
+            left: 710px;
+        }
+        .japanese .product-region li:nth-child(4) {
+            top: 200px;
+            left: 1010px;
+        }
+        .japanese .account-step {
+            padding-top: 122px;
+            background: #f8f8f8;
+            padding-bottom: 108px;
+        }
+        .japanese .account-step h1 {
+            font-size: 36px;
+            color: #31363e;
+            text-align: center;
+            margin-bottom: 22px;
+        }
+        .japanese .account-step p {
+            font-size: 16px;
+            color: #828ea1;
+            text-align: center;
+        }
+        .japanese .account-step .step-list {
+            width: 1100px;
+            margin: 0 auto;
+            margin-top: 90px;
+        }
+        .japanese .account-step .step-list li {
+            float: left;
+            width: 240px;
+            height: 360px;
+        }
+        .japanese .account-step .step-list li:nth-child(even) {
+            width: 160px;
+            height: 360px;
+            position: relative;
+        }
+        .japanese .account-step .step-list li:nth-child(even) .arrow-img {
+            height: 50px;
+            width: 56px;
+            margin-bottom: 0;
+            position: absolute;
+            top: 137px;
+            right: 20px;
+        }
+        .japanese .account-step .step-list img {
+            width: 240px;
+            height: 140px;
+            margin-bottom: 47px;
+        }
+        .japanese .account-step .step-list p {
+            font-size: 16px;
+            color: #31363e;
+            text-align: center;
+            line-height: 20px;
+        }
+        .japanese .account-step .step-list .title {
+            line-height: 40px;
+            font-size: 24px;
+            color: #31363e;
+            text-align: center;
+        }
+        .japanese .account-step .step-list .title span {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background: #2480f5;
+            display: inline-block;
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 52px;
+        }
+    </style>
+    <div class="japanese-header" style="background:url({{sourceMap.japa_banner_bg}}) 0 0 no-repeat">
+        <h1>{{ internationalTitle.title | safe }}</h1>
+        <p>{{ internationalTitle.subTitle | safe }}</p>
+        <div class="register-region clearfix">
+            <section class="input-find-content a-2-bd register-info">
+                <div class="content">
+                    <input autocomplete="off" placeholder="{{locale.personal.prompt.errorEmailText}}" class="b-1-cl register-input" style="text-indent: 20px; width: 286px;">
+                </div>
+            </section>
+            <button class="common-button common-button-solid u-8-bg u-16-cl go-register" style="padding-left: 32px; padding-right: 32px; margin-top: 0px;">
+                <div class="common-button-slot">
+                    {{locale.japanese.goRegister}}
+                </div>
+                <div class='solidBc bghover u-14-bg'></div>
+                <div class='solidBc bgactive u-15-bg'></div>
+            </button>
+            <button data-link="{{ appDownLoad.ios_ipa_download_url }}" class="download common-button common-button-solid u-8-bg u-16-cl download-button" style="width: 140px; padding-left: 24px; padding-right: 24px; margin-top: 0px;">
+                <div class="common-button-slot">
+                    <svg aria-hidden="true" class="icon icon-30"><use xlink:href="#icon-b_13"></use></svg>
+                {{locale.appDownLoad.platform[0]}}
+                </div>
+                <div class='solidBc bghover u-14-bg'></div>
+                <div class='solidBc bgactive u-15-bg'></div>
+            </button>
+            <button data-link="{{ appDownLoad.android_download_url }}" class="download common-button common-button-solid u-8-bg u-16-cl download-button no-margin" style="width: 140px; padding-left: 24px; padding-right: 24px; margin-top: 0px;">
+                <div class="common-button-slot">
+                    <svg aria-hidden="true" class="icon icon-30"><use xlink:href="#icon-b_14"></use></svg>
+                    {{locale.appDownLoad.platform[1]}}
+                </div>
+                <div class='solidBc bghover u-14-bg'></div>
+                <div class='solidBc bgactive u-15-bg'></div>
+            </button>
+        </div>
+        <!-- 公告 -->
+        {% include "./noticeInfo/japanese.njk" %}
+        <div class="header-img" style="background:url({{sourceMap.japa_banner}}) 0 0 no-repeat"></div>
+    </div>
+    {% include "./custom/japanese.njk"%}
+    <div class="swipers japanese-swipers" style="height:768px;width:100%;
+         background-image:linear-gradient(-196deg, #1A4A87 0%, #000000 72%);">
+        {% import "./swiper/china.njk" as swiper %}
+        {{ swiper.boxStyle(height='768px', width='100%', bgColor='c-3-bg', slideList=cmsAdvertList, extendPath =sourceMap.swiperExtend, activeClass="jp-active") }}
+    </div>
+    <div class="qa-container">
+        <div class="qa-region">
+            <h1>{{ locale.japanese.qa.title }}</h1>
+            <p>{{ locale.japanese.qa.desc }}</p>
+            <ul class="qa-list">
+                {% for item in locale.japanese.qa.q %}
+                <li>
+                    <div class="q-region clearfix">
+                        {{ item }}
+                        <div class="arrow-region">
+                            <svg class="icon icon-24 q-icon" aria-hidden="true">
+                                <use xlink:href="#icon-c_19"></use>
+                            </svg>
+                            <svg class="icon icon-24 a-icon" aria-hidden="true" style="display:none">
+                                <use xlink:href="#icon-c_19"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="a-region" style="display: none">
+                        {{ locale.japanese.qa.a[loop.index0] }}
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <script>
+        (() => {
+            const $japanese = document.querySelector('.japanese-home-container');
+            const $qaRegion = $japanese.querySelector('.qa-region');
+            const $qaList = $qaRegion.querySelectorAll('.q-region');
+            const $aList = $qaRegion.querySelectorAll('.a-region');
+            const $goRegister = $japanese.querySelector('.go-register');
+            const $registerInfo = $japanese.querySelector('.register-input');
+            const $downLoadList = $japanese.querySelectorAll('.download');
+
+            const bindEvent = () => {
+                $qaList.forEach((target, index) => {
+                    target.addEventListener('click', () => {
+                        const $qIcon = target.querySelector('.q-icon');
+                        const $aIcon = target.querySelector('.a-icon');
+                        if ($aIcon.style.display === 'none'){
+                            $aIcon.style.display = 'block';
+                            $qIcon.style.display = 'none';
+                            $aList[index].style.display = 'block';
+
+                        }else {
+                            $aIcon.style.display = 'none';
+                            $qIcon.style.display = 'block';
+                            $aList[index].style.display = 'none';
+                        }
+                    }, false);
+                });
+
+                $downLoadList.forEach((target) => {
+                    target.addEventListener('click', () => {
+                        const { link } = target.dataset;
+                        window.open(link);
+                    }, false);
+                });
+
+                $goRegister.addEventListener('click', () => {
+                    if ($registerInfo.value){
+                        location.href = `/register?email=${$registerInfo.value}`;
+                    }
+                }, false);
+            };
+
+            const init = () => {
+                bindEvent();
+            };
+
+            init();
+        })();
+    </script>
+</div>

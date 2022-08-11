@@ -1,0 +1,208 @@
+2022-03-19 01:37:50,043 INFO 39238 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:37:50,104 INFO 39238 [egg-multipart] stream mode enable
+2022-03-19 01:37:50,325 INFO 39238 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:37:50,329 INFO 39238 [egg-security] use methodnoallow middleware
+2022-03-19 01:37:50,332 INFO 39238 [egg-security] use noopen middleware
+2022-03-19 01:37:50,333 INFO 39238 [egg-security] use nosniff middleware
+2022-03-19 01:37:50,333 INFO 39238 [egg-security] use xssProtection middleware
+2022-03-19 01:37:50,333 INFO 39238 [egg-security] use xframe middleware
+2022-03-19 01:37:50,333 INFO 39238 [egg-security] use dta middleware
+2022-03-19 01:37:50,333 INFO 39238 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:37:50,348 INFO 39238 [egg:core] dump config after load, 5ms
+2022-03-19 01:37:50,359 INFO 39238 [egg-watcher:application] watcher start success
+2022-03-19 01:37:50,372 INFO 39238 [egg:core] dump config after ready, 8ms
+2022-03-19 01:37:50,087 INFO 39239 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:37:50,130 INFO 39239 [egg-multipart] stream mode enable
+2022-03-19 01:37:50,313 INFO 39239 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:37:50,324 INFO 39239 [egg-security] use methodnoallow middleware
+2022-03-19 01:37:50,325 INFO 39239 [egg-security] use noopen middleware
+2022-03-19 01:37:50,325 INFO 39239 [egg-security] use nosniff middleware
+2022-03-19 01:37:50,326 INFO 39239 [egg-security] use xssProtection middleware
+2022-03-19 01:37:50,326 INFO 39239 [egg-security] use xframe middleware
+2022-03-19 01:37:50,326 INFO 39239 [egg-security] use dta middleware
+2022-03-19 01:37:50,326 INFO 39239 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:37:50,346 INFO 39239 [egg:core] dump config after load, 4ms
+2022-03-19 01:37:50,357 INFO 39239 [egg-watcher:application] watcher start success
+2022-03-19 01:37:50,370 INFO 39239 [egg:core] dump config after ready, 9ms
+2022-03-19 01:37:50,090 INFO 39240 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:37:50,177 INFO 39240 [egg-multipart] stream mode enable
+2022-03-19 01:37:50,342 INFO 39240 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:37:50,346 INFO 39240 [egg-security] use methodnoallow middleware
+2022-03-19 01:37:50,347 INFO 39240 [egg-security] use noopen middleware
+2022-03-19 01:37:50,347 INFO 39240 [egg-security] use nosniff middleware
+2022-03-19 01:37:50,347 INFO 39240 [egg-security] use xssProtection middleware
+2022-03-19 01:37:50,347 INFO 39240 [egg-security] use xframe middleware
+2022-03-19 01:37:50,352 INFO 39240 [egg-security] use dta middleware
+2022-03-19 01:37:50,352 INFO 39240 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:37:50,366 INFO 39240 [egg:core] dump config after load, 4ms
+2022-03-19 01:37:50,375 INFO 39240 [egg-watcher:application] watcher start success
+2022-03-19 01:37:50,384 INFO 39240 [egg:core] dump config after ready, 5ms
+2022-03-19 01:37:50,133 INFO 39242 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:37:50,204 INFO 39242 [egg-multipart] stream mode enable
+2022-03-19 01:37:50,377 INFO 39242 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:37:50,389 INFO 39242 [egg-security] use methodnoallow middleware
+2022-03-19 01:37:50,389 INFO 39242 [egg-security] use noopen middleware
+2022-03-19 01:37:50,390 INFO 39242 [egg-security] use nosniff middleware
+2022-03-19 01:37:50,391 INFO 39242 [egg-security] use xssProtection middleware
+2022-03-19 01:37:50,392 INFO 39242 [egg-security] use xframe middleware
+2022-03-19 01:37:50,392 INFO 39242 [egg-security] use dta middleware
+2022-03-19 01:37:50,392 INFO 39242 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:37:50,411 INFO 39242 [egg:core] dump config after load, 12ms
+2022-03-19 01:37:50,423 INFO 39242 [egg-watcher:application] watcher start success
+2022-03-19 01:37:50,434 INFO 39242 [egg:core] dump config after ready, 6ms
+2022-03-19 01:37:50,146 INFO 39243 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:37:50,215 INFO 39243 [egg-multipart] stream mode enable
+2022-03-19 01:37:50,374 INFO 39243 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:37:50,380 INFO 39243 [egg-security] use methodnoallow middleware
+2022-03-19 01:37:50,381 INFO 39243 [egg-security] use noopen middleware
+2022-03-19 01:37:50,381 INFO 39243 [egg-security] use nosniff middleware
+2022-03-19 01:37:50,381 INFO 39243 [egg-security] use xssProtection middleware
+2022-03-19 01:37:50,382 INFO 39243 [egg-security] use xframe middleware
+2022-03-19 01:37:50,383 INFO 39243 [egg-security] use dta middleware
+2022-03-19 01:37:50,383 INFO 39243 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:37:50,404 INFO 39243 [egg:core] dump config after load, 11ms
+2022-03-19 01:37:50,419 INFO 39243 [egg-watcher:application] watcher start success
+2022-03-19 01:37:50,434 INFO 39243 [egg:core] dump config after ready, 10ms
+2022-03-19 01:37:50,161 INFO 39241 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:37:50,213 INFO 39241 [egg-multipart] stream mode enable
+2022-03-19 01:37:50,424 INFO 39241 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:37:50,426 INFO 39241 [egg-security] use methodnoallow middleware
+2022-03-19 01:37:50,427 INFO 39241 [egg-security] use noopen middleware
+2022-03-19 01:37:50,427 INFO 39241 [egg-security] use nosniff middleware
+2022-03-19 01:37:50,427 INFO 39241 [egg-security] use xssProtection middleware
+2022-03-19 01:37:50,427 INFO 39241 [egg-security] use xframe middleware
+2022-03-19 01:37:50,428 INFO 39241 [egg-security] use dta middleware
+2022-03-19 01:37:50,428 INFO 39241 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:37:50,444 INFO 39241 [egg:core] dump config after load, 7ms
+2022-03-19 01:37:50,452 INFO 39241 [egg-watcher:application] watcher start success
+2022-03-19 01:37:50,464 INFO 39241 [egg:core] dump config after ready, 9ms
+2022-03-19 01:37:50,204 INFO 39245 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:37:50,266 INFO 39245 [egg-multipart] stream mode enable
+2022-03-19 01:37:50,436 INFO 39245 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:37:50,441 INFO 39245 [egg-security] use methodnoallow middleware
+2022-03-19 01:37:50,442 INFO 39245 [egg-security] use noopen middleware
+2022-03-19 01:37:50,442 INFO 39245 [egg-security] use nosniff middleware
+2022-03-19 01:37:50,442 INFO 39245 [egg-security] use xssProtection middleware
+2022-03-19 01:37:50,442 INFO 39245 [egg-security] use xframe middleware
+2022-03-19 01:37:50,443 INFO 39245 [egg-security] use dta middleware
+2022-03-19 01:37:50,443 INFO 39245 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:37:50,454 INFO 39245 [egg:core] dump config after load, 6ms
+2022-03-19 01:37:50,464 INFO 39245 [egg-watcher:application] watcher start success
+2022-03-19 01:37:50,490 INFO 39245 [egg:core] dump config after ready, 24ms
+2022-03-19 01:37:50,226 INFO 39246 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:37:50,314 INFO 39246 [egg-multipart] stream mode enable
+2022-03-19 01:37:50,449 INFO 39246 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:37:50,453 INFO 39246 [egg-security] use methodnoallow middleware
+2022-03-19 01:37:50,454 INFO 39246 [egg-security] use noopen middleware
+2022-03-19 01:37:50,454 INFO 39246 [egg-security] use nosniff middleware
+2022-03-19 01:37:50,454 INFO 39246 [egg-security] use xssProtection middleware
+2022-03-19 01:37:50,454 INFO 39246 [egg-security] use xframe middleware
+2022-03-19 01:37:50,455 INFO 39246 [egg-security] use dta middleware
+2022-03-19 01:37:50,455 INFO 39246 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:37:50,478 INFO 39246 [egg:core] dump config after load, 16ms
+2022-03-19 01:37:50,498 INFO 39246 [egg-watcher:application] watcher start success
+2022-03-19 01:37:50,509 INFO 39246 [egg:core] dump config after ready, 7ms
+2022-03-19 01:39:06,148 INFO 39590 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:39:06,203 INFO 39590 [egg-multipart] stream mode enable
+2022-03-19 01:39:06,378 INFO 39590 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:39:06,384 INFO 39590 [egg-security] use methodnoallow middleware
+2022-03-19 01:39:06,385 INFO 39590 [egg-security] use noopen middleware
+2022-03-19 01:39:06,386 INFO 39590 [egg-security] use nosniff middleware
+2022-03-19 01:39:06,386 INFO 39590 [egg-security] use xssProtection middleware
+2022-03-19 01:39:06,386 INFO 39590 [egg-security] use xframe middleware
+2022-03-19 01:39:06,388 INFO 39590 [egg-security] use dta middleware
+2022-03-19 01:39:06,388 INFO 39590 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:39:06,420 INFO 39590 [egg:core] dump config after load, 19ms
+2022-03-19 01:39:06,435 INFO 39590 [egg-watcher:application] watcher start success
+2022-03-19 01:39:06,447 INFO 39590 [egg:core] dump config after ready, 8ms
+2022-03-19 01:39:06,149 INFO 39585 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:39:06,184 INFO 39585 [egg-multipart] stream mode enable
+2022-03-19 01:39:06,384 INFO 39585 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:39:06,388 INFO 39585 [egg-security] use methodnoallow middleware
+2022-03-19 01:39:06,388 INFO 39585 [egg-security] use noopen middleware
+2022-03-19 01:39:06,388 INFO 39585 [egg-security] use nosniff middleware
+2022-03-19 01:39:06,389 INFO 39585 [egg-security] use xssProtection middleware
+2022-03-19 01:39:06,389 INFO 39585 [egg-security] use xframe middleware
+2022-03-19 01:39:06,389 INFO 39585 [egg-security] use dta middleware
+2022-03-19 01:39:06,389 INFO 39585 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:39:06,420 INFO 39585 [egg:core] dump config after load, 19ms
+2022-03-19 01:39:06,434 INFO 39585 [egg-watcher:application] watcher start success
+2022-03-19 01:39:06,449 INFO 39585 [egg:core] dump config after ready, 9ms
+2022-03-19 01:39:06,150 INFO 39581 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:39:06,202 INFO 39581 [egg-multipart] stream mode enable
+2022-03-19 01:39:06,385 INFO 39581 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:39:06,392 INFO 39581 [egg-security] use methodnoallow middleware
+2022-03-19 01:39:06,392 INFO 39581 [egg-security] use noopen middleware
+2022-03-19 01:39:06,392 INFO 39581 [egg-security] use nosniff middleware
+2022-03-19 01:39:06,393 INFO 39581 [egg-security] use xssProtection middleware
+2022-03-19 01:39:06,393 INFO 39581 [egg-security] use xframe middleware
+2022-03-19 01:39:06,393 INFO 39581 [egg-security] use dta middleware
+2022-03-19 01:39:06,393 INFO 39581 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:39:06,410 INFO 39581 [egg:core] dump config after load, 7ms
+2022-03-19 01:39:06,420 INFO 39581 [egg-watcher:application] watcher start success
+2022-03-19 01:39:06,446 INFO 39581 [egg:core] dump config after ready, 21ms
+2022-03-19 01:39:06,151 INFO 39583 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:39:06,210 INFO 39583 [egg-multipart] stream mode enable
+2022-03-19 01:39:06,383 INFO 39583 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:39:06,388 INFO 39583 [egg-security] use methodnoallow middleware
+2022-03-19 01:39:06,389 INFO 39583 [egg-security] use noopen middleware
+2022-03-19 01:39:06,390 INFO 39583 [egg-security] use nosniff middleware
+2022-03-19 01:39:06,390 INFO 39583 [egg-security] use xssProtection middleware
+2022-03-19 01:39:06,391 INFO 39583 [egg-security] use xframe middleware
+2022-03-19 01:39:06,392 INFO 39583 [egg-security] use dta middleware
+2022-03-19 01:39:06,392 INFO 39583 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:39:06,412 INFO 39583 [egg:core] dump config after load, 9ms
+2022-03-19 01:39:06,422 INFO 39583 [egg-watcher:application] watcher start success
+2022-03-19 01:39:06,430 INFO 39583 [egg:core] dump config after ready, 5ms
+2022-03-19 01:39:06,154 INFO 39588 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:39:06,203 INFO 39588 [egg-multipart] stream mode enable
+2022-03-19 01:39:06,380 INFO 39588 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:39:06,385 INFO 39588 [egg-security] use methodnoallow middleware
+2022-03-19 01:39:06,385 INFO 39588 [egg-security] use noopen middleware
+2022-03-19 01:39:06,386 INFO 39588 [egg-security] use nosniff middleware
+2022-03-19 01:39:06,386 INFO 39588 [egg-security] use xssProtection middleware
+2022-03-19 01:39:06,387 INFO 39588 [egg-security] use xframe middleware
+2022-03-19 01:39:06,388 INFO 39588 [egg-security] use dta middleware
+2022-03-19 01:39:06,388 INFO 39588 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:39:06,400 INFO 39588 [egg:core] dump config after load, 5ms
+2022-03-19 01:39:06,419 INFO 39588 [egg-watcher:application] watcher start success
+2022-03-19 01:39:06,437 INFO 39588 [egg:core] dump config after ready, 15ms
+2022-03-19 01:39:06,155 INFO 39584 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:39:06,197 INFO 39584 [egg-multipart] stream mode enable
+2022-03-19 01:39:06,389 INFO 39584 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:39:06,392 INFO 39584 [egg-security] use methodnoallow middleware
+2022-03-19 01:39:06,392 INFO 39584 [egg-security] use noopen middleware
+2022-03-19 01:39:06,392 INFO 39584 [egg-security] use nosniff middleware
+2022-03-19 01:39:06,393 INFO 39584 [egg-security] use xssProtection middleware
+2022-03-19 01:39:06,393 INFO 39584 [egg-security] use xframe middleware
+2022-03-19 01:39:06,393 INFO 39584 [egg-security] use dta middleware
+2022-03-19 01:39:06,395 INFO 39584 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:39:06,412 INFO 39584 [egg:core] dump config after load, 7ms
+2022-03-19 01:39:06,427 INFO 39584 [egg-watcher:application] watcher start success
+2022-03-19 01:39:06,442 INFO 39584 [egg:core] dump config after ready, 7ms
+2022-03-19 01:39:06,161 INFO 39582 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:39:06,211 INFO 39582 [egg-multipart] stream mode enable
+2022-03-19 01:39:06,382 INFO 39582 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:39:06,389 INFO 39582 [egg-security] use methodnoallow middleware
+2022-03-19 01:39:06,390 INFO 39582 [egg-security] use noopen middleware
+2022-03-19 01:39:06,390 INFO 39582 [egg-security] use nosniff middleware
+2022-03-19 01:39:06,390 INFO 39582 [egg-security] use xssProtection middleware
+2022-03-19 01:39:06,391 INFO 39582 [egg-security] use xframe middleware
+2022-03-19 01:39:06,391 INFO 39582 [egg-security] use dta middleware
+2022-03-19 01:39:06,391 INFO 39582 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:39:06,403 INFO 39582 [egg:core] dump config after load, 5ms
+2022-03-19 01:39:06,421 INFO 39582 [egg-watcher:application] watcher start success
+2022-03-19 01:39:06,431 INFO 39582 [egg:core] dump config after ready, 6ms
+2022-03-19 01:39:06,206 INFO 39587 [egg:logger] init all loggers with options: {"dir":"/Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/exchange-fe-home-log","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"exchange-vue-home-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"application"}
+2022-03-19 01:39:06,261 INFO 39587 [egg-multipart] stream mode enable
+2022-03-19 01:39:06,396 INFO 39587 [egg-static] starting static serve / -> /Users/safahi/Documents/GitHub/Exchange-Fe-Home-Privitization-Master/app/dist
+2022-03-19 01:39:06,400 INFO 39587 [egg-security] use methodnoallow middleware
+2022-03-19 01:39:06,401 INFO 39587 [egg-security] use noopen middleware
+2022-03-19 01:39:06,401 INFO 39587 [egg-security] use nosniff middleware
+2022-03-19 01:39:06,401 INFO 39587 [egg-security] use xssProtection middleware
+2022-03-19 01:39:06,401 INFO 39587 [egg-security] use xframe middleware
+2022-03-19 01:39:06,402 INFO 39587 [egg-security] use dta middleware
+2022-03-19 01:39:06,402 INFO 39587 [egg-security] compose 6 middlewares into one security middleware
+2022-03-19 01:39:06,421 INFO 39587 [egg:core] dump config after load, 5ms
+2022-03-19 01:39:06,438 INFO 39587 [egg-watcher:application] watcher start success
+2022-03-19 01:39:06,460 INFO 39587 [egg:core] dump config after ready, 12ms
